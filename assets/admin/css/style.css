@@ -4966,3 +4966,11 @@ span.customSelect.changed {
 .customSelectInner {
     background:url(../img/customSelect-arrow.gif) no-repeat center right;
 }
+.add_process .col-sm-6 .form-group{
+    padding-right: 20px !important;
+}
+.add_process .button_add_process{
+    overflow: hidden;
+}
+
+

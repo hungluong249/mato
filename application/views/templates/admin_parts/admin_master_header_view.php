@@ -1,285 +1,127 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
-        <meta name="author" content="GeeksLabs">
-        <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-        <link rel="shortcut icon" href="img/favicon.png">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?php echo $page_title; ?></title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="<?php echo site_url('assets/admin/'); ?>bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="<?php echo site_url('assets/admin/'); ?>bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="<?php echo site_url('assets/admin/'); ?>bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="<?php echo site_url('assets/admin/'); ?>dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="<?php echo site_url('assets/admin/'); ?>dist/css/AdminLTE.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="<?php echo site_url('assets/admin/'); ?>dist/css/skins/_all-skins.min.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="<?php echo site_url('assets/admin/'); ?>bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <!-- Color picker -->
+    <link rel="stylesheet" href="<?php echo site_url('assets/admin/'); ?>bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="<?php echo site_url('assets/admin/'); ?>bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    
+    <script src="<?php echo site_url('assets/admin/'); ?>bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="<?php echo site_url('assets/admin/'); ?>bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Jquery validate -->
+    <script src="<?php echo site_url('assets/admin/'); ?>bower_components/jquery/src/jquery.validate.js"></script>
+    <script src="<?php echo site_url('assets/admin/'); ?>bower_components/jquery/src/additional-methods.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="<?php echo site_url('assets/admin/'); ?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="<?php echo site_url('assets/admin/'); ?>js/admin/index.js"></script>
+    <!-- daterangepicker -->
+    <script src="<?php echo site_url('assets/admin/'); ?>bower_components/moment/min/moment.min.js"></script>
+    <script src="<?php echo site_url('assets/admin/'); ?>bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- datepicker -->
+    <script src="<?php echo site_url('assets/admin/'); ?>bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <!-- Color picker -->
+    <script src="<?php echo site_url('assets/admin/'); ?>bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Slimscroll -->
+    <script src="<?php echo site_url('assets/admin/'); ?>bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="<?php echo site_url('assets/admin/'); ?>bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="<?php echo site_url('assets/admin/'); ?>dist/js/adminlte.min.js"></script>
 
-        <title><?php echo $page_title; ?></title>
 
-        <!-- Bootstrap CSS -->    
-        <link type="text/css" rel="stylesheet" href="<?php echo site_url('assets/admin/css/bootstrap.min.css'); ?>">
-        <!-- bootstrap theme -->
-        <link type="text/css" rel="stylesheet" href="<?php echo site_url('assets/admin/css/bootstrap-theme.css'); ?>">
-        <!--external css-->
-        <!-- font icon -->
-        <link type="text/css" href="<?php echo site_url('assets/admin/css/elegant-icons-style.css'); ?>" rel="stylesheet" />
-        <link href="<?php echo site_url('assets/admin/css/font-awesome.css'); ?>" rel="stylesheet" />    
-        <link href="<?php echo site_url('assets/admin/css/font-awesome.min.css'); ?>" rel="stylesheet" />
-        <!-- Custom styles -->
-        <link href="<?php echo site_url('assets/admin/css/style.css'); ?>" rel="stylesheet">
-        <link href="<?php echo site_url('assets/admin/css/style-responsive.css'); ?>" rel="stylesheet" />	
-        <link href="<?php echo site_url('assets/admin/css/jquery-ui-1.10.4.min.css'); ?>" rel="stylesheet">
-    </head>
+    <script type="text/javascript" src="<?php echo site_url('tinymce/tinymce.min.js'); ?>"></script>
 
-    <body>
-        <?php
-        if ($this->ion_auth->logged_in()) {
-            ?>
-            <!-- container section start -->
-            <section id="container" class="">
+    <style>
+        @font-face{
+            font-family: webFont_N;
+            src: url("<?php echo site_url('assets/public/font/OpenSans-Regular.ttf'); ?>");
+        }
 
+        body, a{
+            font-family: webFont_N;
+        }
 
-                <header class="header dark-bg">
-                    <div class="toggle-nav">
-                        <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
-                    </div>
+        .skin-blue .sidebar-menu>li>.treeview-menu{
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+    <?php if ($this->ion_auth->logged_in()): ?>
+        <header class="main-header">
+            <!-- logo -->
+            <a href="<?php echo base_url('admin/dashboard') ?>" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>MATO</b></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>MATO CREATIVE</b> ADMIN</span>
+            </a>
+            <!-- header navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">toggle navigation</span>
+                </a>
 
-                    <!--logo start-->
-                    <a href="index.html" class="logo">Mato Creative <span class="lite">Admin</span></a>
-                    <!--logo end-->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- user account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="<?php echo site_url('assets/admin/'); ?>dist/img/user2-160x160.jpg" class="user-image" alt="user image">
+                                <span class="hidden-xs"><?php echo (isset($user_email))? $user_email : '' ?></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- user image -->
+                                <li class="user-header">
+                                    <img src="<?php echo site_url('assets/admin/'); ?>dist/img/user2-160x160.jpg" class="img-circle" alt="user image">
 
-                    <div class="nav search-row" id="top_menu">
-                        <!--  search form start -->
-                        <ul class="nav top-menu">                    
-                            <li>
-                                <form class="navbar-form">
-                                    <input class="form-control" placeholder="Search" type="text">
-                                </form>
-                            </li>                    
-                        </ul>
-                        <!--  search form end -->                
-                    </div>
+                                    <p>
+                                        Thời Gian Hiện Tại
+                                        <small><?php echo date('d/m/Y') ?></small>
+                                    </p>
+                                </li>
+                                <!-- menu body -->
 
-                    <div class="top-nav notification-row">                
-                        <!-- notificatoin dropdown start-->
-                        <ul class="nav pull-right top-menu">
-
-                            <!-- task notificatoin start -->
-                            <li id="task_notificatoin_bar" class="dropdown">
-                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                    <span class="icon-task-l"></i>
-                                        <span class="badge bg-important">6</span>
-                                </a>
-                                <ul class="dropdown-menu extended tasks-bar">
-                                    <div class="notify-arrow notify-arrow-blue"></div>
-                                    <li>
-                                        <p class="blue">You have 6 pending letter</p>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="task-info">
-                                                <div class="desc">Design PSD </div>
-                                                <div class="percent">90%</div>
-                                            </div>
-                                            <div class="progress progress-striped">
-                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                                                    <span class="sr-only">90% Complete (success)</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="task-info">
-                                                <div class="desc">
-                                                    Project 1
-                                                </div>
-                                                <div class="percent">30%</div>
-                                            </div>
-                                            <div class="progress progress-striped">
-                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                                                    <span class="sr-only">30% Complete (warning)</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="task-info">
-                                                <div class="desc">Digital Marketing</div>
-                                                <div class="percent">80%</div>
-                                            </div>
-                                            <div class="progress progress-striped">
-                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                                    <span class="sr-only">80% Complete</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="task-info">
-                                                <div class="desc">Logo Designing</div>
-                                                <div class="percent">78%</div>
-                                            </div>
-                                            <div class="progress progress-striped">
-                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
-                                                    <span class="sr-only">78% Complete (danger)</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="task-info">
-                                                <div class="desc">Mobile App</div>
-                                                <div class="percent">50%</div>
-                                            </div>
-                                            <div class="progress progress-striped active">
-                                                <div class="progress-bar"  role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                                    <span class="sr-only">50% Complete</span>
-                                                </div>
-                                            </div>
-
-                                        </a>
-                                    </li>
-                                    <li class="external">
-                                        <a href="#">See All Tasks</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- task notificatoin end -->
-                            <!-- inbox notificatoin start-->
-                            <li id="mail_notificatoin_bar" class="dropdown">
-                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                    <i class="icon-envelope-l"></i>
-                                    <span class="badge bg-important">5</span>
-                                </a>
-                                <ul class="dropdown-menu extended inbox">
-                                    <div class="notify-arrow notify-arrow-blue"></div>
-                                    <li>
-                                        <p class="blue">You have 5 new messages</p>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
-                                            <span class="subject">
-                                                <span class="from">Greg  Martin</span>
-                                                <span class="time">1 min</span>
-                                            </span>
-                                            <span class="message">
-                                                I really like this admin panel.
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
-                                            <span class="subject">
-                                                <span class="from">Bob   Mckenzie</span>
-                                                <span class="time">5 mins</span>
-                                            </span>
-                                            <span class="message">
-                                                Hi, What is next project plan?
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
-                                            <span class="subject">
-                                                <span class="from">Phillip   Park</span>
-                                                <span class="time">2 hrs</span>
-                                            </span>
-                                            <span class="message">
-                                                I am like to buy this Admin Template.
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
-                                            <span class="subject">
-                                                <span class="from">Ray   Munoz</span>
-                                                <span class="time">1 day</span>
-                                            </span>
-                                            <span class="message">
-                                                Icon fonts are great.
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">See all messages</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- inbox notificatoin end -->
-                            <!-- alert notification start-->
-                            <li id="alert_notificatoin_bar" class="dropdown">
-                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-
-                                    <i class="icon-bell-l"></i>
-                                    <span class="badge bg-important">7</span>
-                                </a>
-                                <ul class="dropdown-menu extended notification">
-                                    <div class="notify-arrow notify-arrow-blue"></div>
-                                    <li>
-                                        <p class="blue">You have 4 new notifications</p>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="label label-primary"><i class="icon_profile"></i></span> 
-                                            Friend Request
-                                            <span class="small italic pull-right">5 mins</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="label label-warning"><i class="icon_pin"></i></span>  
-                                            John location.
-                                            <span class="small italic pull-right">50 mins</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="label label-danger"><i class="icon_book_alt"></i></span> 
-                                            Project 3 Completed.
-                                            <span class="small italic pull-right">1 hr</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="label label-success"><i class="icon_like"></i></span> 
-                                            Mick appreciated your work.
-                                            <span class="small italic pull-right"> Today</span>
-                                        </a>
-                                    </li>                            
-                                    <li>
-                                        <a href="#">See all notifications</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- alert notification end-->
-                            <!-- user login dropdown start-->
-                            <li class="dropdown">
-                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                    <!--
-                                    <span class="profile-ava">
-                                        <img alt="" src="<?php echo site_url('assets/admin/img/images.jpeg'); ?>">
-                                    </span>
-                                    -->
-                                    <span class="username"><?php echo $this->ion_auth->user()->row()->email; ?></span>
-                                    <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu extended logout">
-                                    <div class="log-arrow-up"></div>
-                                    <li class="eborder-top">
-                                        <a href="<?php echo site_url('admin/user/profile'); ?>"><i class="icon_profile"></i> My Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo site_url('admin/user/logout'); ?>"><i class="icon_key_alt"></i> Log Out</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- user login dropdown end -->
-                        </ul>
-                        <!-- notificatoin dropdown end-->
-                    </div>
-                </header>      
-            <?php } ?>
-            <!--header end-->
+                                <!-- menu footer-->
+                                <li class="user-footer">
+                                    <div class="pull-right">
+                                        <a href="<?php echo site_url('admin/user/logout'); ?>" class="btn btn-default btn-flat">sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- control sidebar toggle button -->
+                        <li>
+                            <!--<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>-->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    <?php endif; ?>
