@@ -36,7 +36,8 @@ class User extends MY_Controller {
     }
 
     public function logout() {
-        
+        $this->ion_auth->logout();
+        redirect('admin/user/login', 'refresh');
     }
 
 }
