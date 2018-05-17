@@ -95,7 +95,20 @@ class Partners extends Admin_Controller {
         			$data['image'] = $image;
         		}
         		try {
-        			$this->partners_model->update($id, $data);
+        			$upload = $this->partners_model->update($id, $data);
+                    if($upload){
+                        if($image != $detail['image']){
+                            if (file_exists('assets/upload/partners/'. $detail['image'])){
+                                unlink('assets/upload/partners/'. $detail['image']);
+                            }
+                            $unlink_image = explode('.', $detail['image']);
+                            if (count($unlink_image) == 2) {
+                                if (file_exists('assets/upload/partners/thumbs/'. $unlink_image[0] .'_thumb.'. $unlink_image[1])){
+                                    unlink('assets/upload/partners/thumbs/'. $unlink_image[0] .'_thumb.'. $unlink_image[1]);
+                                }
+                            }
+                        }
+                    }
         			$this->session->set_flashdata('message_success', 'Cập nhật thành công!');
         		} catch (Exception $e) {
         			$this->session->set_flashdata('message_error', 'There was an error inserting news: ' . $e->getMessage());
@@ -119,7 +132,12 @@ class Partners extends Admin_Controller {
 
         $set_delete = array('is_deleted' => 1);
         try {
-            $this->partners_model->delete($id, $set_delete);
+            $delete = $this->partners_model->delete($id, $set_delete);
+            if($delete){
+                if (file_exists('assets/upload/partners/'. $detail['image'])){
+                    unlink('assets/upload/partners/'. $detail['image']);
+                }
+            }
             $this->session->set_flashdata('message', 'Item has deleted successful.');
         } catch (Exception $e) {
             $this->session->set_flashdata('message', 'Have error while delete item: ' . $e->getMessage());
