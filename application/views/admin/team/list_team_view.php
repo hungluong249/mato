@@ -20,7 +20,7 @@
                 <?php endif ?>
             </div>
             <div class="row">
-                <a type="button" href="<?php echo site_url('admin/partners/create'); ?>" class="btn btn-primary">ADD NEWS</a>
+                <a type="button" href="<?php echo site_url('admin/teams/create'); ?>" class="btn btn-primary">ADD NEWS</a>
                 <a type="button" class="btn btn-danger disabled">DELETE ALL SELECTED NEWS</a>
             </div>
             <div class="row">
@@ -30,7 +30,10 @@
                             <td><input type="checkbox" class="check-all" id="check-all" /></td>
                             <td><b><a href="#">ID</a></b></td>
                             <td><b><a href="#">Image</a></b></td>
-                            <td><b><a href="#">Title</a></b></td>
+                            <td><b><a href="#">Name</a></b></td>
+                            <td><b><a href="#">Position</a></b></td>
+                            <td><b><a href="#">Facebook</a></b></td>
+                            <td><b><a href="#">Instagram</a></b></td>
                             <td><b>Operations</b></td>
                         </tr>
                     <?php if (!empty($result)): ?>
@@ -40,13 +43,16 @@
                                     <input type="checkbox" class="checkbox" name="checkbox['<?php echo $item['id'] ?>']" value="<?php echo $item['id'] ?>" />
                                 </td>
                                 <td><?php echo $item['id'] ?></td>
-                                <td width="30%"><img src="<?php echo base_url('assets/upload/partners/'. $item['image']) ?>"></td>
-                                <td><?php echo $item['title'] ?></td>
+                                <td width="20%"><img src="<?php echo base_url('assets/upload/teams/'. $item['image']) ?>"></td>
+                                <td><?php echo $item['name'] ?></td>
+                                <td><?php echo $item['position'] ?></td>
+                                <td><?php echo $item['facebook'] ?></td>
+                                <td><?php echo $item['instagram'] ?></td>
                                 <td>
-                                    <a href="<?php echo base_url('admin/partners/edit/'. $item['id']) ?>">
+                                    <a href="<?php echo base_url('admin/teams/edit/'. $item['id']) ?>">
                                         <span class="glyphicon glyphicon-pencil"></span>
                                     </a>
-                                    <a href="<?php echo base_url('admin/partners/delete/'. $item['id']) ?>" class="btn-remove">
+                                    <a href="<?php echo base_url('admin/teams/delete/'. $item['id']) ?>" class="btn-remove">
                                         <span class="glyphicon glyphicon-remove"></span>
                                     </a>
                                 </td>
@@ -63,6 +69,7 @@
         </div>
     </section>   
 </div>
+
 <script type="text/javascript">
     $('.btn-remove').click(function(event){
         var comfirm = confirm('Chắc chắn xóa?');
