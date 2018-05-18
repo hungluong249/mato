@@ -15,4 +15,8 @@ class Porfolio extends MY_Controller {
         $this->render('porfolio_view');
     }
 
+    public function detail(){
+        $this->render('detail_portfolio_view');
+    }
+
 }

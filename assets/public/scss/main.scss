@@ -1,0 +1,242 @@
+/*
+==============
+MAIN SETUP FOR WHOLE PAGE
+==============
+*/
+
+/* 00-MAIN SETUP */
+
+$primary: rgb(255,222,0);
+$primary-fade: rgba(255,222,0,.9);
+
+
+$gray: #878787;
+
+
+@mixin transition(){
+    -webkit-transition: all ease 1s ;
+    -moz-transition: all ease 1s ;
+    -ms-transition: all ease 1s ;
+    -o-transition: all ease 1s ;
+    transition: all ease 1s ;
+}
+
+a{
+    color: #333;
+
+    &:hover{
+        color: #333;
+    }
+}
+
+@import "font-settings";
+
+/* 01-HEADER */
+
+header{
+    width:100%;
+
+    position: relative;
+
+    padding:15px;
+    background-color:#fff;
+
+
+    .logo{
+        float: left;
+        height: 100%;
+
+        img{
+            vertical-align: middle;
+        }
+    }
+
+    .nav-btn{
+        float: right;
+        text-align: right;
+
+        padding: 15px 25px;
+
+        font-size: 1.5em;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .nav{
+        width: 100%;
+        height: 100vh;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        z-index: 999;
+
+        .left{
+            width: 25%;
+            height: 100%;
+            float: left;
+            background-color: rgba(255,222,0,0.9);
+        }
+
+        .right{
+            width: 75%;
+            height: 100%;
+            float: left;
+
+            padding: 100px;
+            background-color: rgba(255,255,255,0.9);
+
+            ul{
+                li{
+                    display: block;
+                    margin-bottom: 15px;
+
+                    a{
+                        font-size: 3em;
+                    }
+                }
+
+                &.list-inline{
+                    li{
+                        display: inline-block;
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+
+
+    .header_logo{
+        img{
+            width:40%;
+            margin-top:5px;
+        }
+    }
+
+    .header_nav{
+        padding-left:0;
+        padding-right:0;
+
+        ul{
+            margin-top:30px;
+            text-align:right;
+
+            li{
+                display:inline;
+                padding:5px 10px;
+
+                a{
+                    text-transform:uppercase;
+                    font-size:1em;
+                    color:#444;
+
+                    &:hover{
+                        color:#aaa;
+                    }
+                }
+            }
+        }
+    }
+
+    .header_nav_button{
+        text-align:right;
+        padding-top:15px;
+    }
+
+    .header_nav_responsive{
+        height:100%;
+        position:fixed;
+        top:60px;
+        left:-100%;
+        background:#fff;
+
+        ul{
+            margin-top:30px;
+
+            li{
+                padding:10px 30px;
+                border-bottom:1px solid #878787;
+                text-align: center;
+            }
+        }
+    }
+
+    #contact a{
+        color: $primary;
+        font-weight:bold;
+    }
+}
+
+/* END HEADER */
+/*=======================================================*/
+/* 02-MAIN CONTENT */
+
+section.main-content{
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+    section{
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &:first-of-type{
+            padding-top: 0px;
+        }
+
+        &:last-of-type{
+            padding-bottom: 0;
+        }
+
+        .title{
+            width: 50%;
+
+            .heading{
+                h4{
+                    color: $gray;
+                    font-weight: 400;
+                }
+
+                h1{
+                    margin-bottom: 50px;
+                }
+            }
+
+            .content{
+                p{
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+/* END MAIN CONTENT */
+/*=======================================================*/
+/* 03-FOOTER */
+
+footer{
+    height:100px;
+    text-align:center;
+    padding-top:30px;
+    background:#fff;
+    display:block;
+
+    ul{
+        li{
+            display:inline;
+            padding:0 10px;
+        }
+    }
+}
+
+/* END FOOTER */
+/*=======================================================*/
