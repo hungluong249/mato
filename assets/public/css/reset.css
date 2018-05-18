@@ -36,10 +36,6 @@ h1, h2, h3, h4, h5{
 	color:#444;
 }
 
-.heading{
-	text-align:center;
-	margin-bottom:30px;
-}
 
 .main_content{
 	padding-top:100px;
@@ -57,13 +53,6 @@ textarea{
 
 .form-control{
 	border-radius:0;
-}
-
-.cover{
-	width:100%;
-	max-height:400px;
-	overflow:hidden;
-	margin-top:60px;
 }
 
 .cover_inner img{

@@ -1,0 +1,50 @@
+@import "main";
+
+.services{
+    .row{
+        .item{
+            display: inline-block;
+
+            h4{
+                color: $gray;
+            }
+
+            h3{
+                padding-bottom: 30px;
+                border-bottom: 1px solid $gray;
+
+                height: 4em;
+            }
+
+            ul{
+                li{
+                    padding:10px 0;
+                    border-bottom:1px solid $gray;
+
+                    &:last-of-type{
+                        border-bottom:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.process{
+    .item{
+        margin-bottom:15px;
+
+        .content{
+
+        }
+
+        .mask{
+            padding-left:0;
+            padding-right:0;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
