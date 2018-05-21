@@ -16,6 +16,17 @@ class Projects_model extends CI_Model {
         $this->db->order_by("project_id", "desc");
         return $result = $this->db->get()->result_array();
     }
+
+    public function get_related($limit = NULL, $related = NULL, $id = null) {
+        $this->db->select('*');
+        $this->db->from('projects');
+        $this->db->where('project_is_delete', 0);
+        $this->db->where('project_filter', $related);
+        $this->db->where('project_id !=', $id);
+        $this->db->limit($limit);
+        $this->db->order_by("project_id", "RANDOM");
+        return $result = $this->db->get()->result_array();
+    }
     
     public function get_all_main_projects(){
         $this->db->select('*');

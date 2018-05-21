@@ -108,9 +108,13 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="item col-sm-3 col-xs-6">
-			<img src="<?php echo base_url("assets/public/img/clients/client-01.png"); ?>">
-		</div>
+		<?php if ($partners): ?>
+		<?php foreach ($partners as $key => $value): ?>
+			<div class="item col-sm-3 col-xs-6">
+				<img src="<?php echo base_url("assets/upload/partners/" .$value['image']); ?>">
+			</div>
+		<?php endforeach ?>
+		<?php endif ?>
 	</div>
 
 </section>
@@ -124,22 +128,25 @@
 	</div>
 
 	<div class="row">
-
+		<?php if ($teams): ?>
+		<?php foreach ($teams as $key => $value): ?>
 		<div class="item col-sm-3 col-xs-12 wow zoomIn" data-wow-delay="0s">
 			<div class="inner">
-				<img src="<?php echo base_url("assets/public/img/team/kuang.jpg"); ?>">
+				<img src="<?php echo base_url("assets/upload/teams/" .$value['image']); ?>">
 				<div class="wrapper">
 					<div class="content">
-						<h3>Quang Nguyen</h3>
-						<p>Creative Director</p>
-						<a href="https://www.facebook.com/nguyen.m.quang" target="_blank"><i class="fa fa-2x fa-facebook"></i></a>
-						<a href="https://www.instagram.com/quang_136/" target="_blank"><i class="fa fa-2x fa-instagram"></i></a>
+						<h3><?php echo $value['name'] ?></h3>
+						<p><?php echo $value['position'] ?></p>
+						<a href="<?php echo $value['facebook'] ?>" target="_blank"><i class="fa fa-2x fa-facebook"></i></a>
+						<?php if ($value['instagram'] != ''): ?>
+							<a href="<?php echo $value['instagram'] ?>" target="_blank"><i class="fa fa-2x fa-instagram"></i></a>
+						<?php endif ?>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
+		<?php endforeach ?>
+		<?php endif ?>
 	</div>
 
 </section>
