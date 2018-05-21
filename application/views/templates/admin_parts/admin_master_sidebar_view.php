@@ -38,7 +38,7 @@ if ($this->ion_auth->logged_in()) {
                     </li>      
                     <li class="">
                         <a href="<?php echo site_url('admin/news'); ?>" class="">
-                            <i class="icon_document_alt"></i>
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                             <span>News</span>
                             <span class="pull-right-container"></span>
                         </a>
@@ -64,9 +64,15 @@ if ($this->ion_auth->logged_in()) {
                         </ul>
                     </li>
                     <li>
-                        <a class="" href="<?php echo site_url('admin/news'); ?>">
+                        <a class="" href="<?php echo site_url('admin/partners'); ?>">
                             <i class="icon_genius"></i>
-                            <span>News</span>
+                            <span>Partners</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="<?php echo site_url('admin/teams'); ?>">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <span>Teams</span>
                         </a>
                     </li>
                 </ul>

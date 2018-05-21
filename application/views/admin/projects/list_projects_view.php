@@ -36,7 +36,8 @@
             //                    echo '</td>';
                             echo '<td>' . $project['project_description'] . '</td>';
                             echo '<td>' . (($project['project_is_main'] == 1) ? 'Yes' : 'No') . '</td>';
-                            echo '<td>' . anchor('admin/projects/edit/' . $project['project_id'], '<span class="glyphicon glyphicon-pencil"></span>');
+                            echo '<td>' . anchor('admin/projects/detail/' . $project['project_id'], '<span class="glyphicon glyphicon-eye-open"></span>');
+                            echo ' ' . anchor('admin/projects/edit/' . $project['project_id'], '<span class="glyphicon glyphicon-pencil"></span>');
                             echo ' ' . anchor('admin/projects/delete/' . $project['project_id'], '<span class="glyphicon glyphicon-remove"></span>') . '</td>';
                             echo '</tr>';
                         endforeach;
