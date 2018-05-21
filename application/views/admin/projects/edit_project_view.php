@@ -1,5 +1,36 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
+<style type="text/css">
+    [class*='close-'] {
+  color: #777;
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 5px;
+}
+
+.close-classic:after {
+  content: '✖'; /* ANSI X letter */
+  color: red;
+}
+.close-classic:hover{
+    color: #ffffff;
+}
+/* Dialog */
+
+.dialog {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  float: left;
+  margin: 20px;
+  position: relative;
+  width: 150px;
+  
+}
+</style>
+
 <div class="content-wrapper" style="min-height: 916px;">
     <section class="row">
         <div class="container col-md-12">
@@ -37,11 +68,39 @@
                         echo form_input('project_type', set_value('project_type', $project['project_type']), 'class="form-control"');
                         ?>
                     </div>
+                    <div class="form-group">
+                        <label for="project_description_picture">Special</label><br />
+                        <input type="checkbox" name="is_special" value="1" class="btn-special" <?php echo ($project['project_is_special'])? 'checked' : '' ?> >
+                    </div>
+                    <div class="form-group picture" id="image_special" style="display: none;">
+                        <label for="project_description_picture">Image special in use</label><br />
+                        <img src="<?php echo base_url('assets/upload/projects/'. $project['project_image_special']) ?>" width=150>
+                    </div>
+                    <div class="form-group picture" id="special">
+
+                    </div>
+                    <div class="form-group picture">
+                        <label for="project_description_picture">Image in use (Click to choose your Avatar)</label><br />
+                        <?php if ($project['project_description_image'] != ''): ?>
+                            <?php $image = json_decode($project['project_description_image']) ?>
+                            <?php foreach ($image as $key => $value): ?>
+                                <div class="dialog remove_<?php echo $key ?>">
+                                    <img src="<?php echo base_url('assets/upload/projects/'.$value) ?>" width=150 style="cursor: pointer;" class="btn-active-img" data-id="<?php echo $project['project_id'] ?>" data-image="<?php echo $value ?>" data-key="<?php echo $key ?>" >
+
+                                    <a href="#" class="close-classic" data-id="<?php echo $project['project_id'] ?>" data-image="<?php echo $value ?>" data-key="<?php echo $key ?>" ></a>
+                                    <?php if ($value == $project['project_avatar']): ?>
+                                        <i class="fa fa-thumb-tack" aria-hidden="true" style="color: red"></i>
+                                    <?php endif ?>
+                                    
+                                </div>
+                            <?php endforeach ?>
+                        <?php endif ?>
+                    </div>
                     <div class="form-group picture">
                         <?php
                         echo form_label('Description Image', 'project_description_picture');
                         echo form_error('project_description_picture');
-                        echo form_upload('project_description_picture', set_value('project_description_picture'), 'class="form-control"');
+                        echo form_upload('project_description_picture[]', set_value('project_description_picture'), 'class="form-control" multiple');
                         ?>
                     </div>
                     <div class="form-group">
@@ -61,14 +120,13 @@
                     <div class="form-group">
                         <?php
                         $options = array(
-        	        	'0' => '', 
-        	        	'1' => 'hot', 
-        	        	'2' => 'branding', 
-        	        	'3' => 'design', 
-        	        	'4' => 'photography',
-        	        	'5' => 'packaging',
-        	        	'6' => 'print',
-        	        	'7' => 'marketing'
+        	        	'0' => '',
+        	        	'1' => 'branding', 
+        	        	'2' => 'design', 
+        	        	'3' => 'photography',
+        	        	'4' => 'packaging',
+        	        	'5' => 'print',
+        	        	'6' => 'marketing'
                         );
                         echo form_label('Filter project', 'project_filter');
                         echo form_error('project_filter');
@@ -123,4 +181,71 @@
         filemanager_title: "Responsive Filemanager",
         external_plugins: {"filemanager": "<?php echo site_url('filemanager/plugin.min.js'); ?>"}
     });
+
+    $('.close-classic').click(function(){
+        var url = 'http://localhost/mato/admin/projects/remove_image';
+        var key = $(this).data('key');
+        var id = $(this).data('id');
+        var image = $(this).data('image');
+        if(confirm('Chắc chắn xóa?')){
+            $.ajax({
+                method: "get",
+                url: url,
+                data: {
+                    id : id, image : image
+                },
+                success: function(response){
+                    if(response.status == 200 && response.message == ''){
+                        $('.remove_' + key).fadeOut();
+                    }
+                    if(response.status == 200 && response.message != ''){
+                        alert(response.message);
+                    }
+                },
+                error: function(jqXHR, exception){
+                    console.log(errorHandle(jqXHR, exception));
+                }
+            });
+        }
+    });
+
+    $('.btn-active-img').click(function(){
+        var url = 'http://localhost/mato/admin/projects/active_image';
+        var id = $(this).data('id');
+        var image = $(this).data('image');
+        if(confirm('Chắc chắn chọn ảnh này làm Avatar?')){
+             $.ajax({
+                method: "get",
+                url: url,
+                data: {
+                    id : id, image : image
+                },
+                success: function(response){
+                    if(response.status == 200){
+                        location.reload();
+                    }
+                },
+                error: function(jqXHR, exception){
+                    console.log(errorHandle(jqXHR, exception));
+                }
+            });
+        }
+    });
+    var input_image = '<label for="project_special">Special Image</label><input type="file" name="project_image_special" class="form-control">';
+    $('.btn-special').click(function(){
+        if(this.checked){
+        $('#special').html(input_image);
+        $('#image_special').css('display', 'block');
+        }else{
+            $('#special').html('');
+            $('#image_special').css('display', 'none');
+        }
+    })
+    $('.btn-special').each(function(){
+        if(this.checked){
+            $('#image_special').css('display', 'block');
+            $('#special').html(input_image);
+        }
+    })
+
 </script>

@@ -37,11 +37,18 @@
                         echo form_input('project_type', set_value('project_type'), 'class="form-control"');
                         ?>
                     </div>
+                    <div class="form-group">
+                        <label for="project_description_picture">Special</label><br />
+                        <input type="checkbox" name="is_special" value="1" class="btn-special">
+                    </div>
+                    <div class="form-group picture" id="special">
+
+                    </div>
                     <div class="form-group picture">
                         <?php
                         echo form_label('Description Image', 'project_description_picture');
                         echo form_error('project_description_picture');
-                        echo form_upload('project_description_picture', set_value('project_description_picture'), 'class="form-control"');
+                        echo form_upload('project_description_picture[]', set_value('project_description_picture'), 'class="form-control" multiple');
                         ?>
                     </div>
                     <div class="form-group">
@@ -122,4 +129,21 @@
         filemanager_title: "Responsive Filemanager",
         external_plugins: {"filemanager": "<?php echo site_url('filemanager/plugin.min.js'); ?>"}
     });
+
+    var input_image = '<label for="project_special">Special Image</label><input type="file" name="project_image_special" class="form-control">';
+    $('.btn-special').click(function(){
+        if(this.checked){
+        $('#special').html(input_image);
+        $('#image_special').css('display', 'block');
+        }else{
+            $('#special').html('');
+            $('#image_special').css('display', 'none');
+        }
+    })
+    $('.btn-special').each(function(){
+        if(this.checked){
+            $('#image_special').css('display', 'block');
+            $('#special').html(input_image);
+        }
+    })
 </script>

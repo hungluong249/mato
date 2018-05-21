@@ -47,15 +47,17 @@ class Projects extends Admin_Controller {
         } else {
             if ($this->input->post()) {
 
-                // Upload single image
-                $description_image = $this->upload_image('project_description_picture', $_FILES['project_description_picture']['name'], 'assets/upload/projects', 'assets/upload/projects/thumbs');
-
+                // Upload multiple image
+                // $description_image = $this->upload_image('project_description_picture', $_FILES['project_description_picture']['name'], 'assets/upload/projects', 'assets/upload/projects/thumbs');
+                $description_image = $this->upload_multiple_image('./assets/upload/projects', 'project_description_picture', 'assets/upload/projects/thumb');
+                $image_json = json_encode($description_image);
                 $project_data = array(
                     'project_title' => $this->input->post('project_title'),
                     'project_customer' => $this->input->post('project_customer'),
                     'project_location' => $this->input->post('project_location'),
                     'project_type' => $this->input->post('project_type'),
-                    'project_description_image' => $description_image,
+                    'project_description_image' => $image_json,
+                    'project_avatar' => $description_image[0],
                     'project_description' => $this->input->post('project_description'),
                     'project_content' => $this->input->post('project_content'),
                     'project_filter' => $this->input->post('project_filter'),
@@ -65,6 +67,11 @@ class Projects extends Admin_Controller {
                     'project_modified' => $this->author_info['modified'],
                     'project_modified_by' => $this->author_info['modified_by']
                 );
+                if($this->input->post('is_special') == 1){
+                    $project_image_special = $this->upload_image('project_image_special', $_FILES['project_image_special']['name'], 'assets/upload/projects', 'assets/upload/projects/thumbs');
+                    $project_data['project_image_special'] = $project_image_special;
+                    $project_data['project_is_special'] = $this->input->post('is_special');
+                }
 
                 try {
                     $this->projects_model->insert_project($project_data);
@@ -85,8 +92,8 @@ class Projects extends Admin_Controller {
         $this->form_validation->set_rules('project_title', 'Project name', 'trim|required');
 
         $project_id = isset($id) ? (int) $id : (int) $this->input->post('id');
-        $this->data['project'] = $this->projects_model->get_project_by_id($project_id);
-
+        $detail = $this->projects_model->get_project_by_id($project_id);
+        $this->data['project'] = $detail;
         if (!$this->data['project']) {
             redirect('admin/projects', 'refresh');
         }
@@ -102,16 +109,18 @@ class Projects extends Admin_Controller {
             $this->render('admin/projects/edit_project_view');
         } else {
             if ($this->input->post()) {
-
-                // Upload single image
-                $description_image = $this->upload_image('project_description_picture', $_FILES['project_description_picture']['name'], 'assets/upload/projects', 'assets/upload/projects/thumbs');
+                $description_image = $this->upload_multiple_image('./assets/upload/projects', 'project_description_picture', 'assets/upload/projects/thumb');
+                if($description_image){
+                    $old_images = json_decode($detail['project_description_image']);
+                    $new_images = array_merge($old_images, $description_image);
+                    $new_images = json_encode($new_images);
+                }
 
                 $project_data = array(
                     'project_title' => $this->input->post('project_title'),
                     'project_customer' => $this->input->post('project_customer'),
                     'project_location' => $this->input->post('project_location'),
                     'project_type' => $this->input->post('project_type'),
-                    'project_description_image' => $description_image,
                     'project_description' => $this->input->post('project_description'),
                     'project_content' => $this->input->post('project_content'),
                     'project_filter' => $this->input->post('project_filter'),
@@ -119,10 +128,17 @@ class Projects extends Admin_Controller {
                     'project_modified' => $this->author_info['modified'],
                     'project_modified_by' => $this->author_info['modified_by']
                 );
-
-                $converted_data = $this->convert_data_for_edit($project_data);
+                if($this->input->post('is_special') == 1){
+                    $project_image_special = $this->upload_image('project_image_special', $_FILES['project_image_special']['name'], 'assets/upload/projects', 'assets/upload/projects/thumbs');
+                    $project_data['project_image_special'] = $project_image_special;
+                    $project_data['project_is_special'] = $this->input->post('is_special');
+                }
+                if($description_image){
+                    $project_data['project_description_image'] = $new_images;
+                }
+                // $converted_data = $this->convert_data_for_edit($project_data);
                 try {
-                    $this->projects_model->update_project($project_id, $converted_data);
+                    $this->projects_model->update_project($project_id, $project_data);
                     $this->session->set_flashdata('message', 'Project update successfully');
                 } catch (Exception $e) {
                     $this->session->set_flashdata('message', 'There was an error updating the project: ' . $e->getMessage());
@@ -131,6 +147,14 @@ class Projects extends Admin_Controller {
                 redirect('admin/projects', 'refresh');
             }
         }
+    }
+
+    public function detail($id = null){
+        $project_id = isset($id) ? (int) $id : (int) $this->input->post('id');
+        $detail = $this->projects_model->get_project_by_id($project_id);
+        $this->data['detail'] = $detail;
+        // print_r($detail);die;
+        $this->render('admin/projects/detail_project_view');
     }
 
     public function delete($id = NULL) {
@@ -158,6 +182,60 @@ class Projects extends Admin_Controller {
         }
 
         return $data;
+    }
+
+
+    public function remove_image(){
+        $id = $this->input->get('id');
+        $image = $this->input->get('image');
+        $detail = $this->projects_model->get_project_by_id($id);
+        if ($image == $detail['project_avatar']) {
+            return $this->output
+                ->set_content_type('application/json')
+                ->set_status_header(200)
+                ->set_output(json_encode(array('status' => 200, 'message' => "Ảnh này đang được chọn làm Avatar. Không thể xóa!")));
+        }else{
+            $old_images = json_decode($detail['project_description_image']);
+            $key = array_search($image, $old_images);
+            unset($old_images[$key]);
+            $new_images = [];
+            foreach ($old_images as $key => $value) {
+                $new_images[] = $value;
+            }
+            $image_json = json_encode($new_images);
+            $data = array('project_description_image' => $image_json);
+            $update = $this->projects_model->update_project($id, $data);
+            if($update){
+                if($image != '' && file_exists('assets/upload/projects/'.$image)){
+                    unlink('assets/upload/projects/'.$image);
+                }
+                return $this->output
+                ->set_content_type('application/json')
+                ->set_status_header(200)
+                ->set_output(json_encode(array('status' => 200, 'message' => '')));
+            }
+            return $this->output
+            ->set_content_type('application/json')
+            ->set_status_header(400)
+            ->set_output(json_encode(array('status' => 400)));
+        }
+    }
+
+    public function active_image(){
+        $id = $this->input->get('id');
+        $image = $this->input->get('image');
+        $data = array('project_avatar' => $image);
+        $update = $this->projects_model->update_project($id, $data);
+        if($update){
+                return $this->output
+                ->set_content_type('application/json')
+                ->set_status_header(200)
+                ->set_output(json_encode(array('status' => 200, 'message' => '')));
+            }
+            return $this->output
+            ->set_content_type('application/json')
+            ->set_status_header(400)
+            ->set_output(json_encode(array('status' => 400)));
     }
 
 }
