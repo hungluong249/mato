@@ -15,7 +15,13 @@ class Porfolio extends MY_Controller {
         $this->render('porfolio_view');
     }
 
-    public function detail(){
+    public function detail($id = null){
+        $detail = $this->projects_model->get_project_by_id($id);
+        if(!$detail){
+            redirect('homepage', 'refresh');
+        }
+        $this->data['detail'] = $detail;
+        $this->data['projects'] = $this->projects_model->get_related(3, $detail['project_filter'], $detail['project_id']);
         $this->render('detail_portfolio_view');
     }
 

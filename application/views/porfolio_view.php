@@ -16,66 +16,27 @@
 	<div class="carousel-inner" role="listbox">
 
 		<!-- Third Slide -->
-		<div class="item active">
+		<?php foreach ($projects as $key => $value): ?>
+			<?php if ($value['project_is_special'] == 1): ?>
+				<div class="item <?php echo ($key == 0)? 'active' : '' ?>">
+					<!-- Slide Background -->
+					<div class="mask" data-animation="animated fadeInLeft">
+						<img src="<?php echo site_url('assets/upload/projects/' .$value['project_image_special']) ?>" alt="slide img 1"  class="slide-image"/>
+					</div>
 
-			<!-- Slide Background -->
-			<div class="mask" data-animation="animated fadeInLeft">
-				<img src="<?php echo site_url('assets/img/slide/1.png') ?>" alt="slide img 1"  class="slide-image"/>
-			</div>
+					<!-- Slide Text Layer -->
+					<div class="slide-text">
+						<h3 data-animation="animated slideInLeft">Product</h3>
+						<h2 data-animation="animated fadeInUp">Bootstrap Carousel</h2>
+						<h2 data-animation="animated fadeInDown">Bootstrap Carousel</h2>
+						<p data-animation="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec lorem mi. Nulla ac metus elit. Vivamus at tellus ac tortor blandit viverra sed a arcu. Ut lacus magna, aliquam gravida molestie sed.</p>
+						<a href="#" target="_blank"  class="btn btn-primary" data-animation="animated fadeInLeft">More Info</a>
+						<a href="#" target="_blank"  class="btn btn-outline" data-animation="animated fadeInLeft">Shop Now</a>
+					</div>
 
-			<!-- Slide Text Layer -->
-			<div class="slide-text">
-				<h3 data-animation="animated slideInLeft">Product</h3>
-				<h2 data-animation="animated fadeInUp">Bootstrap Carousel</h2>
-				<h2 data-animation="animated fadeInDown">Bootstrap Carousel</h2>
-				<p data-animation="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec lorem mi. Nulla ac metus elit. Vivamus at tellus ac tortor blandit viverra sed a arcu. Ut lacus magna, aliquam gravida molestie sed.</p>
-				<a href="#" target="_blank"  class="btn btn-primary" data-animation="animated fadeInLeft">More Info</a>
-				<a href="#" target="_blank"  class="btn btn-outline" data-animation="animated fadeInLeft">Shop Now</a>
-			</div>
-
-		</div>
-		<!-- End of Slide -->
-
-		<!-- Second Slide -->
-		<div class="item">
-
-			<!-- Slide Background -->
-			<div class="mask" data-animation="animated fadeInLeft">
-				<img src="<?php echo site_url('assets/img/slide/2.png') ?>" alt="Bootstrap Touch Slider"  class="slide-image"/>
-			</div>
-
-			<!-- Slide Text Layer -->
-			<div class="slide-text">
-				<h3 data-animation="animated slideInLeft">Product</h3>
-				<h2 data-animation="animated fadeInUp">Bootstrap Carousel</h2>
-				<h2 data-animation="animated fadeInDown">Bootstrap Carousel</h2>
-				<p data-animation="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec lorem mi. Nulla ac metus elit. Vivamus at tellus ac tortor blandit viverra sed a arcu. Ut lacus magna, aliquam gravida molestie sed.</p>
-				<a href="#" target="_blank"  class="btn btn-primary" data-animation="animated fadeInLeft">More Info</a>
-				<a href="#" target="_blank"  class="btn btn-outline" data-animation="animated fadeInLeft">Shop Now</a>
-			</div>
-
-		</div>
-		<!-- End of Slide -->
-
-		<!-- Third Slide -->
-		<div class="item">
-
-			<!-- Slide Background -->
-			<div class="mask" data-animation="animated fadeInLeft">
-				<img src="<?php echo site_url('assets/img/slide/3.png') ?>" alt="Bootstrap Touch Slider"  class="slide-image"/>
-			</div>
-
-			<!-- Slide Text Layer -->
-			<div class="slide-text">
-				<h3 data-animation="animated slideInLeft">Product</h3>
-				<h2 data-animation="animated fadeInUp">Bootstrap Carousel</h2>
-				<h2 data-animation="animated fadeInDown">Bootstrap Carousel</h2>
-				<p data-animation="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec lorem mi. Nulla ac metus elit. Vivamus at tellus ac tortor blandit viverra sed a arcu. Ut lacus magna, aliquam gravida molestie sed.</p>
-				<a href="#" target="_blank"  class="btn btn-primary" data-animation="animated fadeInLeft">More Info</a>
-				<a href="#" target="_blank"  class="btn btn-outline" data-animation="animated fadeInLeft">Shop Now</a>
-			</div>
-
-		</div>
+				</div>
+			<?php endif ?>
+		<?php endforeach ?>
 		<!-- End of Slide -->
 
 
@@ -178,23 +139,21 @@
 
 			<div class="grid-item mix <?php echo strtolower($type); ?> <?php echo strtolower($secondary_filter); ?>">
 				<div class="inner">
-					<img src="<?php echo base_url('assets/upload/projects/' . $project['project_description_image']); ?>" alt="img du an">
+					<img src="<?php echo base_url('assets/upload/projects/' . $project['project_avatar']); ?>" alt="img du an">
 					<div class="overlay"></div>
 					<div class="top">
-						<span class="nation">Nation</span>
+						<span class="nation"><?php echo $project['project_location']; ?></span>
 						<span class="name"><?php echo $project['project_title']; ?></span>
 						<span class="brand">Brand</span>
 						<span class="field"><?php echo $type . (($secondary_filter != '') ? (' - ' . $secondary_filter) : $secondary_filter); ?></span>
 					</div>
 					<div class="bottom">
-						<a class="btn btn-outline" role="button">Explore</a>
+						<a class="btn btn-outline" role="button" href="<?php echo base_url('porfolio/detail/'. $project['project_id']) ?>" >Explore</a>
 					</div>
 				</div>
 			</div>
 
             <?php endforeach; ?>
-
-
 		</div>
 
 	</div>
