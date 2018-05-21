@@ -1,7 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66fdc395-a6c6-4386-a3a7-21f34c53b335" name="Default" comment="" />
+    <list default="true" id="66fdc395-a6c6-4386-a3a7-21f34c53b335" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/application/views/about_view.php" afterPath="$PROJECT_DIR$/application/views/about_view.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/porfolio_view.php" afterPath="$PROJECT_DIR$/application/views/porfolio_view.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/templates/public_parts/master_footer_view.php" afterPath="$PROJECT_DIR$/application/views/templates/public_parts/master_footer_view.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/templates/public_parts/master_header_view.php" afterPath="$PROJECT_DIR$/application/views/templates/public_parts/master_header_view.php" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/Ionicons/css/ionicons.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/Ionicons/css/ionicons.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js" afterPath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" afterPath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-daterangepicker/daterangepicker.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/assets/admin/bower_components/bootstrap/dist/js/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/chart.js/Chart.min.js" afterPath="$PROJECT_DIR$/assets/admin/bower_components/chart.js/Chart.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/font-awesome/css/font-awesome.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.min.js" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-slimscroll/jquery.slimscroll.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/jquery-ui.min.js" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/jquery-ui.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/base/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/base/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/black-tie/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/black-tie/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/blitzer/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/blitzer/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/cupertino/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/cupertino/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/dark-hive/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/dark-hive/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/dot-luv/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/dot-luv/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/eggplant/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/eggplant/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/excite-bike/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/excite-bike/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/flick/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/flick/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/hot-sneaks/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/hot-sneaks/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/humanity/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/humanity/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/le-frog/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/le-frog/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/mint-choc/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/mint-choc/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/overcast/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/overcast/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/pepper-grinder/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/pepper-grinder/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/redmond/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/redmond/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/south-street/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/south-street/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/start/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/start/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/sunny/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/sunny/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/swanky-purse/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/swanky-purse/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/trontastic/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/trontastic/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/ui-darkness/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/ui-darkness/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/ui-lightness/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/ui-lightness/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/vader/jquery-ui.min.css" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery-ui/themes/vader/jquery-ui.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/jquery/external/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/assets/admin/bower_components/jquery/external/sizzle/dist/sizzle.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/moment/min/locales.min.js" afterPath="$PROJECT_DIR$/assets/admin/bower_components/moment/min/locales.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/bower_components/moment/min/moment-with-locales.min.js" afterPath="$PROJECT_DIR$/assets/admin/bower_components/moment/min/moment-with-locales.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/AdminLTE.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/AdminLTE.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/alt/AdminLTE-bootstrap-social.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/alt/AdminLTE-bootstrap-social.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/alt/AdminLTE-select2.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/alt/AdminLTE-select2.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/alt/AdminLTE-without-plugins.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/alt/AdminLTE-without-plugins.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/_all-skins.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/_all-skins.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-black-light.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-black-light.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-black.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-black.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-blue-light.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-blue-light.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-blue.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-blue.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-green-light.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-green-light.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-green.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-green.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-purple-light.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-purple-light.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-purple.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-purple.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-red-light.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-red-light.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-red.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-red.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-yellow-light.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-yellow-light.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-yellow.min.css" afterPath="$PROJECT_DIR$/assets/admin/dist/css/skins/skin-yellow.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/dist/js/adminlte.min.js" afterPath="$PROJECT_DIR$/assets/admin/dist/js/adminlte.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/assets/admin/font-awesome/css/font-awesome.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/js/admin/bootstrap.min.js" afterPath="$PROJECT_DIR$/assets/admin/js/admin/bootstrap.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/admin/js/admin/fullcalendar.min.js" afterPath="$PROJECT_DIR$/assets/admin/js/admin/fullcalendar.min.js" />
+      <change beforePath="$PROJECT_DIR$/assets/public/css/responsive.css" afterPath="$PROJECT_DIR$/assets/public/css/responsive.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/script.js" afterPath="$PROJECT_DIR$/assets/public/script.js" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/about.css" afterPath="$PROJECT_DIR$/assets/public/scss/about.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/about.css.map" afterPath="$PROJECT_DIR$/assets/public/scss/about.css.map" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/about.min.css" afterPath="$PROJECT_DIR$/assets/public/scss/about.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/contact.css" afterPath="$PROJECT_DIR$/assets/public/scss/contact.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/contact.css.map" afterPath="$PROJECT_DIR$/assets/public/scss/contact.css.map" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/contact.min.css" afterPath="$PROJECT_DIR$/assets/public/scss/contact.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/homepage.css" afterPath="$PROJECT_DIR$/assets/public/scss/homepage.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/homepage.css.map" afterPath="$PROJECT_DIR$/assets/public/scss/homepage.css.map" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/homepage.min.css" afterPath="$PROJECT_DIR$/assets/public/scss/homepage.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/main.css" afterPath="$PROJECT_DIR$/assets/public/scss/main.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/main.css.map" afterPath="$PROJECT_DIR$/assets/public/scss/main.css.map" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/main.min.css" afterPath="$PROJECT_DIR$/assets/public/scss/main.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/main.scss" afterPath="$PROJECT_DIR$/assets/public/scss/main.scss" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/portfolio.css" afterPath="$PROJECT_DIR$/assets/public/scss/portfolio.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/portfolio.css.map" afterPath="$PROJECT_DIR$/assets/public/scss/portfolio.css.map" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/portfolio.min.css" afterPath="$PROJECT_DIR$/assets/public/scss/portfolio.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/portfolio.scss" afterPath="$PROJECT_DIR$/assets/public/scss/portfolio.scss" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/services.css" afterPath="$PROJECT_DIR$/assets/public/scss/services.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/services.css.map" afterPath="$PROJECT_DIR$/assets/public/scss/services.css.map" />
+      <change beforePath="$PROJECT_DIR$/assets/public/scss/services.min.css" afterPath="$PROJECT_DIR$/assets/public/scss/services.min.css" />
+      <change beforePath="$PROJECT_DIR$/assets/public/style.css" afterPath="$PROJECT_DIR$/assets/public/style.css" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,37 +103,197 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/development/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/config/development/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="81" column="24" lean-forward="false" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.7082002">
+      <split-first>
+        <splitter split-orientation="horizontal" split-proportion="0.39940828">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/assets/public/style.css">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="0">
+                      <caret line="312" column="1" lean-forward="false" selection-start-line="312" selection-start-column="1" selection-end-line="312" selection-end-column="1" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="reset.css" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/assets/public/css/reset.css">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="935">
+                      <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/assets/public/script.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="306">
+                      <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file leaf-file-name="master_footer_view.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/application/views/templates/public_parts/master_footer_view.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="323">
+                      <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="master_header_view.php" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/application/views/templates/public_parts/master_header_view.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="181">
+                      <caret line="16" column="101" lean-forward="true" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="homepage_view.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/application/views/homepage_view.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="85">
+                      <caret line="5" column="86" lean-forward="false" selection-start-line="5" selection-start-column="86" selection-end-line="5" selection-end-column="86" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="about_view.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/application/views/about_view.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="853">
+                      <caret line="147" column="89" lean-forward="true" selection-start-line="147" selection-start-column="89" selection-end-line="147" selection-end-column="89" />
+                      <folding>
+                        <marker date="1526890290476" expanded="true" signature="4837:4870" ph="..." />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="porfolio_view.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/application/views/porfolio_view.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="838">
+                      <caret line="72" column="98" lean-forward="false" selection-start-line="72" selection-start-column="98" selection-end-line="72" selection-end-column="98" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="detail_portfolio_view.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/application/views/detail_portfolio_view.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="136">
+                      <caret line="8" column="44" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="8" selection-end-column="44" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/public/scss/main.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="554">
+                  <caret line="190" column="21" lean-forward="false" selection-start-line="190" selection-start-column="21" selection-end-line="190" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="responsive.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/public/scss/responsive.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="portfolio.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/assets/public/scss/portfolio.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-3912">
+                  <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="font-settings.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/public/scss/font-settings.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>time_reference</find>
+      <find>about_services_item</find>
+      <find>about_clients_item</find>
+      <find>about_team_item</find>
+      <find>about_team_item_wrapper_content</find>
+      <find>item col-lg-3 col-md-3 col-sm-3 col-xs-6</find>
+      <find>item col-lg-3 col-md-3 col-sm-3 col-xs-12 wow zoomIn</find>
+      <find>a:hover</find>
+      <find>heading</find>
+      <find>text-color</find>
+      <find>secondary</find>
+      <find>primary-ho</find>
     </findStrings>
+    <replaceStrings>
+      <replace>item</replace>
+      <replace>item col-lg-3</replace>
+      <replace>inner</replace>
+      <replace>wrapper</replace>
+      <replace>content</replace>
+      <replace>item col-sm-3 col-xs-12 wow zoomIn</replace>
+      <replace>gray</replace>
+      <replace>primary</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,6 +304,29 @@
         <option value="$PROJECT_DIR$/application/config/development/routes.php" />
         <option value="$PROJECT_DIR$/application/config/development/config.php" />
         <option value="$PROJECT_DIR$/application/config/development/database.php" />
+        <option value="$PROJECT_DIR$/assets/public/style.css" />
+        <option value="$PROJECT_DIR$/assets/public/scss/font-settings.scss" />
+        <option value="$PROJECT_DIR$/assets/public/scss/about.scss" />
+        <option value="$PROJECT_DIR$/application/views/templates/master_view.php" />
+        <option value="$PROJECT_DIR$/assets/public/scss/services.scss" />
+        <option value="$PROJECT_DIR$/application/views/services_view.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Porfolio.php" />
+        <option value="$PROJECT_DIR$/application/views/detail_portfolio_view.php" />
+        <option value="$PROJECT_DIR$/application/views/contact_view.php" />
+        <option value="$PROJECT_DIR$/assets/public/scss/contact.scss" />
+        <option value="$PROJECT_DIR$/application/views/homepage_view.php" />
+        <option value="$PROJECT_DIR$/assets/public/scss/homepage.scss" />
+        <option value="$PROJECT_DIR$/assets/public/css/reset.css" />
+        <option value="$PROJECT_DIR$/assets/public/js/sliderScript.js" />
+        <option value="$PROJECT_DIR$/assets/public/scss/portfolio.scss" />
+        <option value="$PROJECT_DIR$/application/views/porfolio_view.php" />
+        <option value="$PROJECT_DIR$/assets/public/css/responsive.css" />
+        <option value="$PROJECT_DIR$/assets/public/scss/responsive.scss" />
+        <option value="$PROJECT_DIR$/application/views/templates/public_parts/master_header_view.php" />
+        <option value="$PROJECT_DIR$/assets/public/scss/main.scss" />
+        <option value="$PROJECT_DIR$/assets/public/script.js" />
+        <option value="$PROJECT_DIR$/application/views/templates/public_parts/master_footer_view.php" />
+        <option value="$PROJECT_DIR$/application/views/about_view.php" />
       </list>
     </option>
   </component>
@@ -61,8 +338,12 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="1440" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -79,6 +360,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,6 +401,44 @@
             <path>
               <item name="mato" type="b2602c69:ProjectViewProjectNode" />
               <item name="mato" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mato" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mato" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mato" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mato" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mato" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="mato" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mato" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="filemanager" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -131,14 +451,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -165,34 +485,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526272265016</updated>
-      <workItem from="1526272267113" duration="3136000" />
+      <workItem from="1526272267113" duration="4092000" />
+      <workItem from="1526355192502" duration="12533000" />
+      <workItem from="1526440344630" duration="12637000" />
+      <workItem from="1526524559488" duration="10347000" />
+      <workItem from="1526617285947" duration="3643000" />
+      <workItem from="1526872393236" duration="6592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3136000" />
+    <option name="totallyTimeSpent" value="49844000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20600858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2087327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818532" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291506" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -207,11 +533,42 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1815">
+          <caret line="121" column="32" lean-forward="false" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/services.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/font-settings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/filemanager/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-480">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -219,7 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -227,7 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -235,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -243,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -251,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
           <caret line="122" column="30" lean-forward="true" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -259,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1335">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -267,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -275,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -283,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -291,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="480" column="23" lean-forward="false" selection-start-line="480" selection-start-column="9" selection-end-line="480" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -299,7 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -315,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -323,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-52">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -331,7 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -339,7 +682,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/development/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="67" column="50" lean-forward="false" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -347,14 +696,223 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/templates/admin_master_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/css/font_settings.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/templates/master_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/services_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Porfolio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/services.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/development/database.php">
+    <entry file="file://$PROJECT_DIR$/assets/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="81" column="24" lean-forward="false" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="312" column="1" lean-forward="false" selection-start-line="312" selection-start-column="1" selection-end-line="312" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/contact.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/contact_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/js/sliderScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="945" column="30" lean-forward="true" selection-start-line="945" selection-start-column="30" selection-end-line="945" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/detail_portfolio_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="44" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="8" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/porfolio_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="838">
+          <caret line="72" column="98" lean-forward="false" selection-start-line="72" selection-start-column="98" selection-end-line="72" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/about.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="941">
+          <caret line="100" column="29" lean-forward="false" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/font-settings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/homepage_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="86" lean-forward="false" selection-start-line="5" selection-start-column="86" selection-end-line="5" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="190" column="21" lean-forward="false" selection-start-line="190" selection-start-column="21" selection-end-line="190" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/homepage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/scss/portfolio.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3912">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/templates/public_parts/master_footer_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/js/animate.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/public/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/about_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="147" column="89" lean-forward="true" selection-start-line="147" selection-start-column="89" selection-end-line="147" selection-end-column="89" />
+          <folding>
+            <marker date="1526890290476" expanded="true" signature="4837:4870" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/templates/public_parts/master_header_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="16" column="101" lean-forward="true" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
           <folding />
         </state>
       </provider>

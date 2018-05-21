@@ -144,5 +144,11 @@
 
 </section>
 
+<script src="<?php echo site_url('assets/public/js/wow.min.js') ?>"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/css/animate.min.css') ?>">
+<script>
+    new WOW().init();
+
+</script>
 
 <!-- InstanceEndEditable -->

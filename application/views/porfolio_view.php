@@ -20,17 +20,17 @@
 
 			<!-- Slide Background -->
 			<div class="mask" data-animation="animated fadeInLeft">
-				<img src="<?php echo site_url('assets/img/slide/1.png') ?>" alt="slide img 1"  class="slide-image"/>
+				<img src="<?php echo site_url('assets/public/img/porfolio_index/p_001.jpg') ?>" alt="slide img 1"  class="slide-image"/>
 			</div>
 
 			<!-- Slide Text Layer -->
 			<div class="slide-text">
-				<h3 data-animation="animated slideInLeft">Product</h3>
-				<h2 data-animation="animated fadeInUp">Bootstrap Carousel</h2>
-				<h2 data-animation="animated fadeInDown">Bootstrap Carousel</h2>
+				<span class="nation" data-animation="animated slideInLeft">Nation</span>
+				<span class="name" data-animation="animated fadeInUp">Project Name</span>
+				<span class="brand" data-animation="animated fadeInUp">Brand</span>
+				<span class="field" data-animation="animated fadeInUp">Field</span>
 				<p data-animation="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec lorem mi. Nulla ac metus elit. Vivamus at tellus ac tortor blandit viverra sed a arcu. Ut lacus magna, aliquam gravida molestie sed.</p>
 				<a href="#" target="_blank"  class="btn btn-primary" data-animation="animated fadeInLeft">More Info</a>
-				<a href="#" target="_blank"  class="btn btn-outline" data-animation="animated fadeInLeft">Shop Now</a>
 			</div>
 
 		</div>
@@ -41,17 +41,17 @@
 
 			<!-- Slide Background -->
 			<div class="mask" data-animation="animated fadeInLeft">
-				<img src="<?php echo site_url('assets/img/slide/2.png') ?>" alt="Bootstrap Touch Slider"  class="slide-image"/>
+				<img src="<?php echo site_url('assets/public/img/porfolio_index/p_002.jpg') ?>" alt="Bootstrap Touch Slider"  class="slide-image"/>
 			</div>
 
 			<!-- Slide Text Layer -->
 			<div class="slide-text">
-				<h3 data-animation="animated slideInLeft">Product</h3>
-				<h2 data-animation="animated fadeInUp">Bootstrap Carousel</h2>
-				<h2 data-animation="animated fadeInDown">Bootstrap Carousel</h2>
+				<span class="nation" data-animation="animated slideInLeft">Nation</span>
+				<span class="name" data-animation="animated fadeInUp">Project Name</span>
+				<span class="brand" data-animation="animated fadeInUp">Brand</span>
+				<span class="field" data-animation="animated fadeInUp">Field 1 - Field 2</span>
 				<p data-animation="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec lorem mi. Nulla ac metus elit. Vivamus at tellus ac tortor blandit viverra sed a arcu. Ut lacus magna, aliquam gravida molestie sed.</p>
 				<a href="#" target="_blank"  class="btn btn-primary" data-animation="animated fadeInLeft">More Info</a>
-				<a href="#" target="_blank"  class="btn btn-outline" data-animation="animated fadeInLeft">Shop Now</a>
 			</div>
 
 		</div>
@@ -62,17 +62,17 @@
 
 			<!-- Slide Background -->
 			<div class="mask" data-animation="animated fadeInLeft">
-				<img src="<?php echo site_url('assets/img/slide/3.png') ?>" alt="Bootstrap Touch Slider"  class="slide-image"/>
+				<img src="<?php echo site_url('assets/public/img/porfolio_index/p_003.jpg') ?>" alt="Bootstrap Touch Slider"  class="slide-image"/>
 			</div>
 
 			<!-- Slide Text Layer -->
 			<div class="slide-text">
-				<h3 data-animation="animated slideInLeft">Product</h3>
-				<h2 data-animation="animated fadeInUp">Bootstrap Carousel</h2>
-				<h2 data-animation="animated fadeInDown">Bootstrap Carousel</h2>
+				<span class="nation" data-animation="animated slideInLeft">Nation</span>
+				<span class="name" data-animation="animated fadeInUp">Project Name</span>
+				<span class="brand" data-animation="animated fadeInUp">Brand</span>
+				<span class="field" data-animation="animated fadeInUp">Field 1 - Field 2 - Field 3</span>
 				<p data-animation="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec lorem mi. Nulla ac metus elit. Vivamus at tellus ac tortor blandit viverra sed a arcu. Ut lacus magna, aliquam gravida molestie sed.</p>
 				<a href="#" target="_blank"  class="btn btn-primary" data-animation="animated fadeInLeft">More Info</a>
-				<a href="#" target="_blank"  class="btn btn-outline" data-animation="animated fadeInLeft">Shop Now</a>
 			</div>
 
 		</div>

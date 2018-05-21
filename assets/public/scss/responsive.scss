@@ -1,0 +1,30 @@
+@media (max-width:500px){
+    .header{
+        .logo{
+            width: 50%;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    section.nav{
+        .left{
+            display: none;
+        }
+
+        .right{
+            width: 100%;
+            padding: 50px;
+
+            ul{
+                li{
+                    a{
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
+}

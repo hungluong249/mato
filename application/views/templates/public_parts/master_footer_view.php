@@ -17,12 +17,7 @@
 <script src="<?php echo site_url('assets/public/js/jquery.parallax.js'); ?>"></script>
 <script src="<?php echo site_url('assets/public/script.js'); ?>"></script>
 
-<script src="assets/public/js/wow.min.js"></script>
-<link rel="stylesheet" type="text/css" href="assets/public/css/animate.css">
-<script>
-	new WOW().init();
 
-</script>
 
 <script type="text/javascript">
 	

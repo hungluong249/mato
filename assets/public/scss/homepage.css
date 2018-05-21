@@ -79,10 +79,31 @@ p {
 .flaticon-technology:before {
   content: "\f109"; }
 
+@media (max-width: 500px) {
+  .header .logo {
+    width: 50%; }
+    .header .logo img {
+      width: 100%; }
+
+  section.nav .left {
+    display: none; }
+  section.nav .right {
+    width: 100%;
+    padding: 50px; }
+    section.nav .right ul li a {
+      font-size: 2em; } }
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
 /* 01-HEADER */
 header {
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1011;
   padding: 15px;
   background-color: #fff; }
   header .logo {
@@ -97,32 +118,6 @@ header {
     font-size: 1.5em; }
     header .nav-btn:hover {
       cursor: pointer; }
-  header .nav {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 999; }
-    header .nav .left {
-      width: 25%;
-      height: 100%;
-      float: left;
-      background-color: rgba(255, 222, 0, 0.9); }
-    header .nav .right {
-      width: 75%;
-      height: 100%;
-      float: left;
-      padding: 100px;
-      background-color: rgba(255, 255, 255, 0.9); }
-      header .nav .right ul li {
-        display: block;
-        margin-bottom: 15px; }
-        header .nav .right ul li a {
-          font-size: 3em; }
-      header .nav .right ul.list-inline li {
-        display: inline-block;
-        margin-right: 7px; }
   header .header_logo img {
     width: 40%;
     margin-top: 5px; }
@@ -160,12 +155,40 @@ header {
     color: #ffde00;
     font-weight: bold; }
 
+section.nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001; }
+  section.nav .left {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: #ffde00; }
+  section.nav .right {
+    width: 75%;
+    height: 100%;
+    float: left;
+    padding: 150px;
+    background-color: #fff; }
+    section.nav .right ul li {
+      display: block;
+      margin-bottom: 15px; }
+      section.nav .right ul li a {
+        font-size: 3em; }
+    section.nav .right ul.list-inline li {
+      display: inline-block;
+      margin-right: 7px; }
+
 /* END HEADER */
 /*=======================================================*/
 /* 02-MAIN CONTENT */
 section.main-content {
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  margin-top: 60px; }
   section.main-content section {
     padding-top: 50px;
     padding-bottom: 50px; }
