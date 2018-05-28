@@ -1,20 +1,21 @@
-//$(document).onload(function(){
-//    $('.nav').hide();
-//});
+
+$('section.nav').hide();
 
 $(document).ready(function(){
 	"use strict";
 
     var i = 0;
-    $('header .nav').hide();
+
 
 	$('#nav-btn').click(function(){
 
 	    if(i === 0) {
-	        $('.nav').fadeIn();
+            $('section.nav').fadeIn();
+            $('.header').css('background-color' , 'transparent');
 	        i = 1;
         } else {
-            $('.nav').fadeOut();
+            $('section.nav').fadeOut();
+            $('.header').css('background-color' , '#fff');
             i = 0;
         }
     })
