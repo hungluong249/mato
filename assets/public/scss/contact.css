@@ -79,10 +79,17 @@ p {
 .flaticon-technology:before {
   content: "\f109"; }
 
+body, html {
+  width: 100%;
+  height: 100%; }
+
 /* 01-HEADER */
 header {
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1011;
   padding: 15px;
   background-color: #fff; }
   header .logo {
@@ -97,32 +104,6 @@ header {
     font-size: 1.5em; }
     header .nav-btn:hover {
       cursor: pointer; }
-  header .nav {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 999; }
-    header .nav .left {
-      width: 25%;
-      height: 100%;
-      float: left;
-      background-color: rgba(255, 222, 0, 0.9); }
-    header .nav .right {
-      width: 75%;
-      height: 100%;
-      float: left;
-      padding: 100px;
-      background-color: rgba(255, 255, 255, 0.9); }
-      header .nav .right ul li {
-        display: block;
-        margin-bottom: 15px; }
-        header .nav .right ul li a {
-          font-size: 3em; }
-      header .nav .right ul.list-inline li {
-        display: inline-block;
-        margin-right: 7px; }
   header .header_logo img {
     width: 40%;
     margin-top: 5px; }
@@ -160,12 +141,45 @@ header {
     color: #ffde00;
     font-weight: bold; }
 
+section.nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001; }
+  section.nav .left {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: #ffde00; }
+  section.nav .right {
+    width: 75%;
+    height: 100%;
+    float: left;
+    padding: 150px;
+    background-color: #fff; }
+    section.nav .right .row p {
+      color: #999; }
+    section.nav .right ul li {
+      display: block;
+      margin-bottom: 15px; }
+      section.nav .right ul li a {
+        font-size: 3em; }
+    section.nav .right ul.list-inline li {
+      display: inline-block;
+      margin-right: 7px; }
+      section.nav .right ul.list-inline li a {
+        font-size: 2.5em;
+        color: #999; }
+
 /* END HEADER */
 /*=======================================================*/
 /* 02-MAIN CONTENT */
 section.main-content {
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  margin-top: 90px; }
   section.main-content section {
     padding-top: 50px;
     padding-bottom: 50px; }
@@ -176,12 +190,12 @@ section.main-content {
     section.main-content section .title {
       width: 50%; }
       section.main-content section .title .heading h4 {
-        color: #878787;
+        color: #999;
         font-weight: 400; }
       section.main-content section .title .heading h1 {
         margin-bottom: 50px; }
       section.main-content section .title .content p {
-        color: #878787; }
+        color: #999; }
 
 /* END MAIN CONTENT */
 /*=======================================================*/
@@ -198,11 +212,136 @@ footer {
 
 /* END FOOTER */
 /*=======================================================*/
+@media (max-width: 768px) {
+  header .logo {
+    width: 50%;
+    height: auto; }
+    header .logo img {
+      width: 100%;
+      margin-top: 10px; }
+
+  section.nav .right {
+    width: 100%;
+    padding: 100px 50px 0; }
+
+  section.main-content section .title {
+    width: 100%; }
+  section.main-content section.process .item {
+    display: flex;
+    flex-direction: column; }
+    section.main-content section.process .item .mask {
+      order: 1; }
+    section.main-content section.process .item .content {
+      order: 2; }
+  section.main-content section.porfolio .portfolio-content .grid .grid-item, section.main-content section.porfolio .portfolio-content .grid .grid-sizer {
+    width: 100%; }
+    section.main-content section.porfolio .portfolio-content .grid .grid-item .inner .top, section.main-content section.porfolio .portfolio-content .grid .grid-sizer .inner .top {
+      top: 15px;
+      left: 15px; }
+      section.main-content section.porfolio .portfolio-content .grid .grid-item .inner .top span, section.main-content section.porfolio .portfolio-content .grid .grid-sizer .inner .top span {
+        display: block; }
+        section.main-content section.porfolio .portfolio-content .grid .grid-item .inner .top span.nation, section.main-content section.porfolio .portfolio-content .grid .grid-sizer .inner .top span.nation {
+          font-size: 1.125em; }
+        section.main-content section.porfolio .portfolio-content .grid .grid-item .inner .top span.name, section.main-content section.porfolio .portfolio-content .grid .grid-sizer .inner .top span.name {
+          font-size: 1.75em; }
+        section.main-content section.porfolio .portfolio-content .grid .grid-item .inner .top span.brand, section.main-content section.porfolio .portfolio-content .grid .grid-sizer .inner .top span.brand {
+          display: none; }
+        section.main-content section.porfolio .portfolio-content .grid .grid-item .inner .top span.field, section.main-content section.porfolio .portfolio-content .grid .grid-sizer .inner .top span.field {
+          display: none; }
+    section.main-content section.porfolio .portfolio-content .grid .grid-item .inner .bottom, section.main-content section.porfolio .portfolio-content .grid .grid-sizer .inner .bottom {
+      bottom: 15px;
+      left: 15px; }
+  section.main-content section.portfolio-cover .row {
+    display: flex;
+    flex-direction: column; }
+    section.main-content section.portfolio-cover .row .left {
+      order: 2; }
+      section.main-content section.portfolio-cover .row .left span {
+        display: block; }
+        section.main-content section.portfolio-cover .row .left span.nation {
+          font-size: 1.25em;
+          margin-top: 1em; }
+        section.main-content section.portfolio-cover .row .left span.name {
+          font-size: 3em;
+          padding-top: 0.75em;
+          padding-bottom: 1em; }
+        section.main-content section.portfolio-cover .row .left span.brand {
+          font-size: 1.5em; }
+    section.main-content section.portfolio-cover .row .right {
+      order: 1; }
+      section.main-content section.portfolio-cover .row .right .mask {
+        height: 300px; }
+  section.main-content section.portfolio-detail article p {
+    padding-left: 30px;
+    padding-right: 30px; }
+  section.main-content .cover-about .cover-inner {
+    height: 50vh; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  header .logo {
+    width: 50%;
+    height: auto; }
+    header .logo img {
+      width: 100%;
+      margin-top: 10px; }
+  header .nav-btn {
+    margin-top: 15px; }
+
+  section.nav .right {
+    padding: 150px 50px 0; }
+
+  section.main-content section.container {
+    width: 100%; }
+    section.main-content section.container.process .item {
+      display: flex;
+      flex-direction: column; }
+      section.main-content section.container.process .item .mask {
+        width: 100%;
+        order: 1; }
+      section.main-content section.container.process .item .content {
+        width: 100%;
+        order: 2; }
+    section.main-content section.container.porfolio .portfolio-content .grid .grid-item, section.main-content section.container.porfolio .portfolio-content .grid .grid-sizer {
+      width: 50%; }
+      section.main-content section.container.porfolio .portfolio-content .grid .grid-item .inner .top, section.main-content section.container.porfolio .portfolio-content .grid .grid-sizer .inner .top {
+        top: 15px;
+        left: 15px; }
+        section.main-content section.container.porfolio .portfolio-content .grid .grid-item .inner .top span, section.main-content section.container.porfolio .portfolio-content .grid .grid-sizer .inner .top span {
+          display: block; }
+          section.main-content section.container.porfolio .portfolio-content .grid .grid-item .inner .top span.nation, section.main-content section.container.porfolio .portfolio-content .grid .grid-sizer .inner .top span.nation {
+            font-size: 1.125em; }
+          section.main-content section.container.porfolio .portfolio-content .grid .grid-item .inner .top span.name, section.main-content section.container.porfolio .portfolio-content .grid .grid-sizer .inner .top span.name {
+            font-size: 1.75em; }
+          section.main-content section.container.porfolio .portfolio-content .grid .grid-item .inner .top span.brand, section.main-content section.container.porfolio .portfolio-content .grid .grid-sizer .inner .top span.brand {
+            font-size: 1.125em; }
+          section.main-content section.container.porfolio .portfolio-content .grid .grid-item .inner .top span.field, section.main-content section.container.porfolio .portfolio-content .grid .grid-sizer .inner .top span.field {
+            display: none; }
+      section.main-content section.container.porfolio .portfolio-content .grid .grid-item .inner .bottom, section.main-content section.container.porfolio .portfolio-content .grid .grid-sizer .inner .bottom {
+        bottom: 15px;
+        left: 15px; }
+    section.main-content section.container.portfolio-related .row .item .inner {
+      padding: 0px; }
+  section.main-content .portfolio-cover .row {
+    display: inline-block !important; }
+    section.main-content .portfolio-cover .row .left span {
+      display: block; }
+      section.main-content .portfolio-cover .row .left span.nation {
+        font-size: 1.25em;
+        margin-top: 1em; }
+      section.main-content .portfolio-cover .row .left span.name {
+        font-size: 3em;
+        padding-top: 0.75em;
+        padding-bottom: 1em; }
+      section.main-content .portfolio-cover .row .left span.brand {
+        font-size: 1.5em; }
+    section.main-content .portfolio-cover .row .right .mask {
+      height: 400px !important; } }
 .map {
   width: 100%;
   height: 400px;
   max-height: 400px; }
 
+.contact .left p {
+  color: #999; }
 .contact .right {
   margin-top: 20px; }
   .contact .right .row {

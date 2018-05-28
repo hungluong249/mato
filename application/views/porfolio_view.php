@@ -18,6 +18,62 @@
 		<!-- Third Slide -->
 		<?php foreach ($projects as $key => $value): ?>
 			<?php if ($value['project_is_special'] == 1): ?>
+                <?php
+                $type = '';
+                $secondary_filter = '';
+                switch ($value['project_filter']) {
+                    case 1:
+                        $type = 'Highlights';
+                        break;
+                    case 2:
+                        $type = 'Branding';
+                        break;
+                    case 3:
+                        $type = 'Website';
+                        break;
+                    case 4:
+                        $type = 'Photography';
+                        break;
+                    case 5:
+                        $type = 'Packaging';
+                        break;
+                    case 6:
+                        $type = 'Print';
+                        break;
+                    case 7:
+                        $type = 'Marketing Design';
+                        break;
+                    default:
+                        $type = '';
+                        break;
+                }
+                switch ($value['project_secondary_filter']) {
+                    case 1:
+                        $secondary_filter = 'Highlights';
+                        break;
+                    case 2:
+                        $secondary_filter = 'Branding';
+                        break;
+                    case 3:
+                        $secondary_filter = 'Website';
+                        break;
+                    case 4:
+                        $secondary_filter = 'Photography';
+                        break;
+                    case 5:
+                        $secondary_filter = 'Packaging';
+                        break;
+                    case 6:
+                        $secondary_filter = 'Print';
+                        break;
+                    case 7:
+                        $secondary_filter = 'Marketing Design';
+                        break;
+                    default:
+                        $secondary_filter = '';
+                        break;
+                }
+                ?>
 				<div class="item <?php echo ($key == 0)? 'active' : '' ?>">
 					<!-- Slide Background -->
 					<div class="mask" data-animation="animated fadeInLeft">
@@ -26,12 +82,12 @@
 
 					<!-- Slide Text Layer -->
 					<div class="slide-text">
-						<h3 data-animation="animated slideInLeft">Product</h3>
-						<h2 data-animation="animated fadeInUp">Bootstrap Carousel</h2>
-						<h2 data-animation="animated fadeInDown">Bootstrap Carousel</h2>
-						<p data-animation="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec lorem mi. Nulla ac metus elit. Vivamus at tellus ac tortor blandit viverra sed a arcu. Ut lacus magna, aliquam gravida molestie sed.</p>
-						<a href="#" target="_blank"  class="btn btn-primary" data-animation="animated fadeInLeft">More Info</a>
-						<a href="#" target="_blank"  class="btn btn-outline" data-animation="animated fadeInLeft">Shop Now</a>
+						<span class="nation" data-animation="animated slideInLeft"><?php echo $value['project_location'] ?></span>
+						<span class="name" data-animation="animated fadeInUp"><?php echo $value['project_title'] ?></span>
+						<span class="brand" data-animation="animated fadeInUp"><?php echo $value['project_customer'] ?></span>
+						<span class="field" data-animation="animated fadeInUp"><?php echo $type ?> - <?php echo $secondary_filter ?></span>
+						<p data-animation="animated fadeInUp"><?php echo $value['project_description'] ?></p>
+						<a href="<?php echo base_url('porfolio/detail/'. $value['project_id']) ?>" class="btn btn-primary" data-animation="animated fadeInLeft">More Info</a>
 					</div>
 
 				</div>
@@ -63,7 +119,7 @@
 <section class="porfolio container">
 	<div class="porfolio-control row">
 		<ul class="nav nav-pills nav-justified">
-			<li><a class="filter" data-filter="*">Tất cả Dự án</a></li>
+			<li><a class="filter" data-filter="*">Tất cả</a></li>
 			<!--
 			<li><a class="filter" data-filter=".highlights">Dự án nổi bật</a></li>
 			-->
@@ -144,7 +200,7 @@
 					<div class="top">
 						<span class="nation"><?php echo $project['project_location']; ?></span>
 						<span class="name"><?php echo $project['project_title']; ?></span>
-						<span class="brand">Brand</span>
+						<span class="brand"><?php echo $project['project_customer']; ?></span>
 						<span class="field"><?php echo $type . (($secondary_filter != '') ? (' - ' . $secondary_filter) : $secondary_filter); ?></span>
 					</div>
 					<div class="bottom">

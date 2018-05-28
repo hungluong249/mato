@@ -1,0 +1,298 @@
+
+
+
+@media (max-width:768px){
+    header{
+        .logo{
+            width: 50%;
+            height: auto;
+
+            img{
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    section.nav{
+        .right{
+            width: 100%;
+            padding: 100px 50px 0;
+        }
+    }
+
+    section.main-content{
+        section{
+            .title{
+                width: 100%;
+            }
+
+            &.process{
+                .item{
+                    display: flex;
+                    flex-direction: column;
+
+                    .mask{
+                        order: 1;
+                    }
+
+                    .content{
+                        order: 2;
+                    }
+                }
+            }
+
+            &.porfolio{
+                .portfolio-content{
+                    .grid{
+                        .grid-item, .grid-sizer{
+                            width: 100%;
+
+                            .inner{
+                                .top{
+                                    top: 15px;
+                                    left: 15px;
+
+                                    span{
+                                        display: block;
+
+                                        &.nation{
+                                            font-size: 1.125em;
+                                        }
+
+                                        &.name{
+                                            font-size: 1.75em;
+                                        }
+
+                                        &.brand{
+                                            display: none;
+                                        }
+
+                                        &.field{
+                                            display: none;
+                                        }
+
+                                    }
+                                }
+
+                                .bottom{
+                                    bottom: 15px;
+                                    left: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.portfolio-cover{
+                .row{
+                    display: flex;
+                    flex-direction: column;
+
+                    .left{
+                        order: 2;
+
+                        span{
+                            display: block;
+
+                            &.nation{
+                                font-size: 1.25em;
+                                margin-top: 1em;
+                            }
+
+                            &.name{
+                                font-size: 3em;
+                                padding-top: 0.75em;
+                                padding-bottom: 1em;
+                            }
+
+                            &.brand{
+                                font-size: 1.5em;
+                            }
+
+                            &.field{
+
+                            }
+
+                        }
+                    }
+
+                    .right{
+                        order: 1;
+
+                        .mask{
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+
+            &.portfolio-detail {
+                article{
+                    p{
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+
+        .cover-about{
+            .cover-inner{
+                height: 50vh;
+            }
+        }
+    }
+
+    footer{
+
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width: 992px){
+    header{
+        .logo{
+            width: 50%;
+            height: auto;
+
+            img{
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+
+        .nav-btn{
+            margin-top: 15px;
+        }
+    }
+
+    section.nav{
+        .right{
+            padding: 150px 50px 0;
+        }
+    }
+
+    section.main-content{
+        section.container{
+            width: 100%;
+
+            &.process{
+                .item{
+                    display: flex;
+                    flex-direction: column;
+
+                    .mask{
+                        width: 100%;
+                        order: 1;
+                    }
+
+                    .content{
+                        width: 100%;
+                        order: 2;
+                    }
+                }
+            }
+
+            &.porfolio{
+                .portfolio-content{
+                    .grid{
+                        .grid-item, .grid-sizer{
+                            width: 50%;
+
+                            .inner{
+                                .top{
+                                    top: 15px;
+                                    left: 15px;
+
+                                    span{
+                                        display: block;
+
+                                        &.nation{
+                                            font-size: 1.125em;
+                                        }
+
+                                        &.name{
+                                            font-size: 1.75em;
+                                        }
+
+                                        &.brand{
+                                            font-size: 1.125em;
+                                        }
+
+                                        &.field{
+                                            display: none;
+                                        }
+
+                                    }
+                                }
+
+                                .bottom{
+                                    bottom: 15px;
+                                    left: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.portfolio-related {
+                .row {
+                    .item {
+                        .inner {
+                            padding: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .portfolio-cover{
+            .row{
+                display: inline-block !important;
+
+                .left{
+
+
+                    span{
+                        display: block;
+
+                        &.nation{
+                            font-size: 1.25em;
+                            margin-top: 1em;
+                        }
+
+                        &.name{
+                            font-size: 3em;
+                            padding-top: 0.75em;
+                            padding-bottom: 1em;
+                        }
+
+                        &.brand{
+                            font-size: 1.5em;
+                        }
+
+                        &.field{
+
+                        }
+
+                    }
+                }
+
+                .right{
+
+                    .mask{
+                        height: 400px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+
+    }
+}

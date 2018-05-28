@@ -153,7 +153,7 @@ switch ($detail['project_secondary_filter']) {
 							<span class="field"><?php echo $type ?> - <?php echo $secondary_filter ?></span>
 						</div>
 						<div class="bottom">
-							<a class="btn btn-outline" role="button">Explore</a>
+							<a href="<?php echo base_url('porfolio/detail/'. $value['project_id']) ?>" class="btn btn-outline" role="button">Explore</a>
 						</div>
 					</div>
 				</div>

@@ -6,15 +6,16 @@
 <section class="contact container">
 	<div class="title">
 		<div class="heading">
-			<h4>Contact Us</h4>
+			<h4>Liên hệ với chúng tôi</h4>
 			<h1>Mato Creative</h1>
 		</div>
 	</div>
 	<div class="row">
 		<div class="left col-md-4 col-sm-4 col-xs-12">
-			<h4>Address</h4>
+			<h4>Địa chỉ</h4>
 			<p>Tầng 4 - 19 Nguyễn Bỉnh Khiêm</p>
 			<p>Hai Bà Trưng - Hà Nội</p>
+			<br>
 			<h4>Email / Hotline</h4>
 			<p>hello@matocreative.vn</p>
 			<p>(+84) 988 613 690</p>
@@ -58,7 +59,7 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-4 col-xs-12">
-                    <?php echo form_submit('submit', 'Send', 'class="btn btn-default button"'); ?>
+                    <?php echo form_submit('submit', 'Gửi tin nhắn', 'class="btn btn-default button"'); ?>
 				</div>
 			</div>
 			<?php

@@ -1,10 +1,10 @@
 <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/scss/about.min.css'); ?>">
 
-<section class="cover cover_about">
-	<div class="cover_inner">
+<section class="cover cover-about">
+	<div class="cover-inner">
     	<img src="<?php echo base_url("assets/public/img/cover/cover_about.jpg"); ?>">
     </div>
-    <div class="cover_wrapper">
+    <div class="cover-wrapper">
     </div>
 </section>
 
@@ -12,7 +12,7 @@
 <section class="intro container">
 	<div class="title">
 		<div class="heading">
-			<h4>About Us</h4>
+			<h4>Giới thiệu</h4>
 			<h1>Mato Creative</h1>
 		</div>
 		<div class="content">
@@ -24,8 +24,8 @@
 <section class="services container">
 	<div class="title">
 		<div class="heading">
-			<h4>About Us</h4>
-			<h1>Services</h1>
+			<h4>Giới thiệu</h4>
+			<h1>Dịch vụ chính</h1>
 		</div>
 	</div>
 
@@ -103,8 +103,8 @@
 <section class="clients container">
 	<div class="title">
 		<div class="heading">
-			<h4>About Us</h4>
-			<h1>Clients</h1>
+			<h4>Giới thiệu</h4>
+			<h1>Khách hàng</h1>
 		</div>
 	</div>
 	<div class="row">
@@ -122,7 +122,7 @@
 <section class="team container">
 	<div class="title">
 		<div class="heading">
-			<h4>About Us</h4>
+			<h4>Giới thiệu</h4>
 			<h1>Team</h1>
 		</div>
 	</div>
