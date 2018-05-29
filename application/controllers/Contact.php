@@ -30,22 +30,22 @@ class Contact extends MY_Controller {
         if($this->form_validation->run() == FALSE){
             $this->render('contact_view');
         }else{
-            if($this->input->post('submit') == 'Send'){
-                $mail = new PHPMailer();
+            if($this->input->post()){
+               $mail = new PHPMailer();
                 $mail->IsSMTP(); // set mailer to use SMTP
-                $mail->Host = "ssl://smtp.gmail.com"; // specify main and backup server
+                $mail->Host = "smtp.gmail.com"; // specify main and backup server
                 $mail->Port = 465; // set the port to use
                 $mail->SMTPAuth = true; // turn on SMTP authentication
                 $mail->SMTPSecure = 'ssl';
-                $mail->Username = "sendmail@matocreative.vn"; // your SMTP username or your gmail username
-                $mail->Password = "P@ssword"; // your SMTP password or your gmail password
-                $mail->CharSet = 'UTF-8';
-                $from = "sendmail@matocreative.vn"; // Reply to this email
-                $to="hello@matocreative.vn"; // Recipients email ID
-                $name="hello@matocreative.vn"; // Recipient's name
+                $mail->Username = "matomailfrom@gmail.com"; // your SMTP username or your gmail username
+                $mail->Password = "qpnitgdwirwrreim"; // your SMTP password or your gmail password
+                $from = "matomailfrom@gmail.com"; // Reply to this email
+                $to = "hello@matocreative.vn"; // Recipients email ID
+                $name = 'WEBMAIL'; // Recipient's name
                 $mail->From = $from;
-                $mail->FromName = "From site"; // Name to indicate where the email came from when the recepient received
-                $mail->AddAddress($to,$name);
+                $mail->FromName = $name; // Name to indicate where the email came from when the recepient received
+                $mail->AddAddress($to, $name);
+                $mail->CharSet = 'UTF-8';
                 $mail->AddReplyTo($from);
                 $mail->WordWrap = 50; // set word wrap
                 $mail->IsHTML(true); // send as HTML
@@ -62,7 +62,6 @@ class Contact extends MY_Controller {
                 $message .= "</body></html>";
 
                 $mail->Body = $message; //HTML Body
-                //$mail->SMTPDebug = 2;
                 
                 try{
                     $mail->Send();
@@ -70,6 +69,7 @@ class Contact extends MY_Controller {
                     redirect('contact', 'refresh');
                 }catch(Exception $e){
                     $this->session->set_flashdata('message', '<h1>Oops, Error: "'. $mail->ErrorInfo . '</h1>');
+                    redirect('contact', 'refresh');
                 }
             }
         }
