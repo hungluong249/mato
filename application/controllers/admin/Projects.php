@@ -35,7 +35,9 @@ class Projects extends Admin_Controller {
         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('project_title', 'Project name', 'trim|required');
+        $project_class = array(1 => 1, 2 => 2, 3 => 3);
 
+        $this->data['project_class'] = $project_class;
         $this->data['over_main'] = 0;
         $number_main_projects = $this->projects_model->count_main_projects();
 
@@ -62,6 +64,7 @@ class Projects extends Admin_Controller {
                     'project_content' => $this->input->post('project_content'),
                     'project_filter' => $this->input->post('project_filter'),
                     'project_secondary_filter' => $this->input->post('project_secondary_filter'),
+                    'project_class' => $this->input->post('project_class'),
                     'project_created' => $this->author_info['created'],
                     'project_created_by' => $this->author_info['created_by'],
                     'project_modified' => $this->author_info['modified'],
@@ -97,7 +100,9 @@ class Projects extends Admin_Controller {
         if (!$this->data['project']) {
             redirect('admin/projects', 'refresh');
         }
+        $project_class = array(1 => 1, 2 => 2, 3 => 3);
 
+        $this->data['project_class'] = $project_class;
         $this->data['over_main'] = 0;
         $number_main_projects = $this->projects_model->count_main_projects();
 
@@ -125,6 +130,7 @@ class Projects extends Admin_Controller {
                     'project_content' => $this->input->post('project_content'),
                     'project_filter' => $this->input->post('project_filter'),
                     'project_secondary_filter' => $this->input->post('project_secondary_filter'),
+                    'project_class' => $this->input->post('project_class'),
                     'project_modified' => $this->author_info['modified'],
                     'project_modified_by' => $this->author_info['modified_by']
                 );

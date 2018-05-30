@@ -128,6 +128,10 @@
                                             <th>Secondary filter project</th>
                                             <td><?php echo $detail['project_secondary_filter'] ?></td>
                                         </tr>
+                                        <tr>
+                                            <th>Class</th>
+                                            <td><?php echo $detail['project_class'] ?></td>
+                                        </tr>
                                     </table>
                                 </div>
                             </div>
