@@ -10,8 +10,8 @@
 	</div>
 	<div class="row">
 		<div class="item col-md-2 col-sm-6 col-xs-6">
-			<h4>1.</h4>
-			<h3>Branding</h3>
+			<h1>1.</h1>
+			<h4>Branding</h4>
 			<ul>
 				<li>Tư vấn thương hiệu</li>
 				<li>Tính cách thương hiệu</li>
@@ -28,8 +28,8 @@
 		</div>
 
 		<div class="item col-md-2 col-sm-6 col-xs-6">
-			<h4>2.</h4>
-			<h3>Web Design</h3>
+			<h1>2.</h1>
+			<h4>Web Design</h4>
 			<ul>
 				<li>Thiết kế Website</li>
 				<li>Phát triển Website</li>
@@ -39,8 +39,8 @@
 		</div>
 
 		<div class="item col-md-2 col-sm-6 col-xs-6">
-			<h4>3.</h4>
-			<h3>Photography</h3>
+			<h1>3.</h1>
+			<h4>Photography</h4>
 			<ul>
 				<li>Photography</li>
 				<li>Digital imaging/ Retouch</li>
@@ -50,8 +50,8 @@
 		</div>
 
 		<div class="item col-md-2 col-sm-6 col-xs-6">
-			<h4>4.</h4>
-			<h3>Packaging</h3>
+			<h1>4.</h1>
+			<h4>Packaging</h4>
 			<ul>
 				<li>Thiết kế bao bì sản phẩm</li>
 				<li>Thiết kế nhãn hàng</li>
@@ -60,8 +60,8 @@
 		</div>
 
 		<div class="item col-md-2 col-sm-6 col-xs-6">
-			<h4>5.</h4>
-			<h3>Marketing Design</h3>
+			<h1>5.</h1>
+			<h4>Marketing Design</h4>
 			<ul>
 				<li>Thiết kế thư điện tử quảng cáo</li>
 				<li>Banner quảng cáo</li>
@@ -72,8 +72,8 @@
 		</div>
 
 		<div class="item col-md-2 col-sm-6 col-xs-6">
-			<h4>6.</h4>
-			<h3>Print</h3>
+			<h1>6.</h1>
+			<h4>Print</h4>
 			<ul>
 				<li>Tư vấn in ấn</li>
 				<li>In offset</li>

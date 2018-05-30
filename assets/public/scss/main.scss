@@ -227,6 +227,14 @@ section.main-content{
                 h1{
                     margin-bottom: 50px;
                 }
+
+                .underline{
+                    width: 75px;
+                    height: 5px;
+                    background-color: $gray;
+                    margin-top: 15px;
+                    margin-bottom: 30px;
+                }
             }
 
             .content{

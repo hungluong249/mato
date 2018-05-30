@@ -31,12 +31,15 @@ class Contact extends MY_Controller {
             $this->render('contact_view');
         }else{
             if($this->input->post()){
+
                $mail = new PHPMailer();
+
                 $mail->IsSMTP(); // set mailer to use SMTP
                 $mail->Host = "smtp.gmail.com"; // specify main and backup server
                 $mail->Port = 465; // set the port to use
                 $mail->SMTPAuth = true; // turn on SMTP authentication
                 $mail->SMTPSecure = 'ssl';
+
                 $mail->Username = "matomailfrom@gmail.com"; // your SMTP username or your gmail username
                 $mail->Password = "qpnitgdwirwrreim"; // your SMTP password or your gmail password
                 $from = "matomailfrom@gmail.com"; // Reply to this email
