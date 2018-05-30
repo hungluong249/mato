@@ -53,6 +53,15 @@
                     </div>
                     <div class="form-group">
                         <?php
+                        echo form_label('Class', 'project_class').'<br>';
+                        echo form_error('project_class');
+                        ?>
+                        <?php foreach ($project_class as $key => $value): ?>
+                            <input type="radio" name="project_class" value="<?php echo $key ?>" > <?php echo $value ?><br>
+                        <?php endforeach ?>
+                    </div>
+                    <div class="form-group">
+                        <?php
                         echo form_label('Description', 'project_description');
                         echo form_error('project_description');
                         echo form_textarea('project_description', set_value('project_description', ''), 'class="form-control"');
