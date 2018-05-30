@@ -4,18 +4,20 @@ MAIN SETUP FOR WHOLE PAGE
 ==============
 */
 /* 00-MAIN SETUP */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 a {
   color: #333; }
   a:hover {
     color: #333; }
 
+/*
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica Vn', sans-serif;
   font-weight: 400; }
 
 h1, h2, h3, h4 {
-  font-weight: 700; }
+  font-weight: 600; }
 
 h1 {
   font-size: 4em; }
@@ -194,6 +196,12 @@ section.main-content {
         font-weight: 400; }
       section.main-content section .title .heading h1 {
         margin-bottom: 50px; }
+      section.main-content section .title .heading .underline {
+        width: 75px;
+        height: 5px;
+        background-color: #666;
+        margin-top: 15px;
+        margin-bottom: 30px; }
       section.main-content section .title .content p {
         color: #999; }
 
@@ -337,12 +345,13 @@ footer {
       height: 400px !important; } }
 .services .row .item {
   display: inline-block; }
+  .services .row .item h1 {
+    color: #666;
+    font-size: 4.5em; }
   .services .row .item h4 {
-    color: #666; }
-  .services .row .item h3 {
     padding-bottom: 30px;
     border-bottom: 1px solid #666;
-    height: 4em; }
+    height: 3.5em; }
   .services .row .item ul li {
     padding: 10px 0;
     border-bottom: 1px solid #666; }

@@ -201,6 +201,7 @@
 						<span class="nation"><?php echo $project['project_location']; ?></span>
 						<span class="name"><?php echo $project['project_title']; ?></span>
 						<span class="brand"><?php echo $project['project_customer']; ?></span>
+						<br>
 						<span class="field"><?php echo $type . (($secondary_filter != '') ? (' - ' . $secondary_filter) : $secondary_filter); ?></span>
 					</div>
 					<div class="bottom">

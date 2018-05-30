@@ -5,15 +5,16 @@
         .item{
             display: inline-block;
 
-            h4{
+            h1{
                 color: $gray;
+                font-size: 4.5em;
             }
 
-            h3{
+            h4{
                 padding-bottom: 30px;
                 border-bottom: 1px solid $gray;
 
-                height: 4em;
+                height: 3.5em;
             }
 
             ul{

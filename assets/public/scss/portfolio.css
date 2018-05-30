@@ -4,18 +4,20 @@ MAIN SETUP FOR WHOLE PAGE
 ==============
 */
 /* 00-MAIN SETUP */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 a {
   color: #333; }
   a:hover {
     color: #333; }
 
+/*
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica Vn', sans-serif;
   font-weight: 400; }
 
 h1, h2, h3, h4 {
-  font-weight: 700; }
+  font-weight: 600; }
 
 h1 {
   font-size: 4em; }
@@ -194,6 +196,12 @@ section.main-content {
         font-weight: 400; }
       section.main-content section .title .heading h1 {
         margin-bottom: 50px; }
+      section.main-content section .title .heading .underline {
+        width: 75px;
+        height: 5px;
+        background-color: #666;
+        margin-top: 15px;
+        margin-bottom: 30px; }
       section.main-content section .title .content p {
         color: #999; }
 
@@ -537,7 +545,7 @@ footer {
       font-size: 1.25em; }
     .slide-text span.name {
       font-size: 2.5em;
-      font-weight: 800;
+      font-weight: 600;
       padding-top: 30px;
       padding-bottom: 30px; }
     .slide-text span.brand {
@@ -622,6 +630,15 @@ footer {
 .porfolio .portfolio-content .grid .grid-item {
   width: 50%;
   float: left; }
+  .porfolio .portfolio-content .grid .grid-item.lg {
+    width: 50vw;
+    height: 50vw; }
+  .porfolio .portfolio-content .grid .grid-item.md {
+    width: 50vw;
+    height: 25vw; }
+  .porfolio .portfolio-content .grid .grid-item.sm {
+    width: 25vw;
+    height: 25vw; }
   .porfolio .portfolio-content .grid .grid-item .inner {
     width: 100%;
     height: 100%;
@@ -669,7 +686,8 @@ footer {
       .porfolio .portfolio-content .grid .grid-item .inner .top span {
         display: block; }
         .porfolio .portfolio-content .grid .grid-item .inner .top span.nation {
-          font-size: 1.125em; }
+          font-size: 1.125em;
+          text-transform: uppercase; }
         .porfolio .portfolio-content .grid .grid-item .inner .top span.name {
           font-size: 2.5em;
           padding-top: 15px;
@@ -722,9 +740,10 @@ footer {
 .portfolio-cover .row .left span {
   display: block; }
   .portfolio-cover .row .left span.nation {
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin-top: 5em;
-    color: #999; }
+    color: #999;
+    text-transform: uppercase; }
   .portfolio-cover .row .left span.name {
     font-size: 4em;
     padding-top: 2em;

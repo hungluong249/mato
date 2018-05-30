@@ -30,18 +30,18 @@ class Contact extends MY_Controller {
         if($this->form_validation->run() == FALSE){
             $this->render('contact_view');
         }else{
-            if($this->input->post('submit') == 'Send'){
+            if($this->input->post()){
                 $mail = new PHPMailer();
                 $mail->IsSMTP(); // set mailer to use SMTP
                 $mail->Host = "ssl://smtp.gmail.com"; // specify main and backup server
                 $mail->Port = 465; // set the port to use
                 $mail->SMTPAuth = true; // turn on SMTP authentication
                 $mail->SMTPSecure = 'ssl';
-                $mail->Username = "sendmail@matocreative.vn"; // your SMTP username or your gmail username
-                $mail->Password = "P@ssword"; // your SMTP password or your gmail password
+                $mail->Username = "nghemalao@gmail.com"; // your SMTP username or your gmail username
+                $mail->Password = "Huongdan1"; // your SMTP password or your gmail password
                 $mail->CharSet = 'UTF-8';
-                $from = "sendmail@matocreative.vn"; // Reply to this email
-                $to="hello@matocreative.vn"; // Recipients email ID
+                $from = "nghemalao@gmail.com"; // Reply to this email
+                $to="minhtruong93gtvt@gmail.com"; // Recipients email ID
                 $name="hello@matocreative.vn"; // Recipient's name
                 $mail->From = $from;
                 $mail->FromName = "From site"; // Name to indicate where the email came from when the recepient received
