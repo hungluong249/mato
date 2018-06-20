@@ -1,0 +1,211 @@
+/*
+===============================
+===============================
+
+CSS for Homepage
+Author: hung.luong@matocreative.vn
+
+===============================
+===============================
+ */
+
+
+
+@import "main";
+
+header{
+    position: initial;
+}
+
+.work{
+    .cover{
+        width: 100%;
+        height: 80vh;
+
+        margin-top: 20vh;
+
+        position: relative;
+
+        .overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .mask{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .intro{
+            position: absolute;
+            top: 50vh;
+            left: 50%;
+
+            color: #fff;
+
+            .head{
+                font-family: webFont-semi;
+                font-size: 0.875em;
+            }
+
+            .body{
+                font-family: webFont-semi;
+                font-size: 4.375em;
+            }
+
+            .foot{
+                a{
+                    color: #fff;
+                    font-size: 0.875em;
+
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .work-head{
+        .container{
+            padding-top: 100px;
+
+            .row{
+                .work-intro{
+                    p{
+                        font-family: webFont-semi;
+                        font-size: 2.26em;
+                        color: 333;
+                    }
+                }
+
+                .work-control{
+                    margin-top: 60px;
+
+                    ul{
+                        li{
+                            margin-bottom: 15px;
+
+                            a{
+                                font-size: 0.875em;
+                                color: #999;
+
+                                &:hover{
+                                    color: #333;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .work-content{
+                    margin-top: 100px;
+
+                    .grid-sizer, .grid-item{
+                        width: 50%;
+                    }
+
+                    .grid-item{
+                        position: relative;
+
+                        margin-bottom: 60px;
+
+                        &:nth-of-type(odd){
+                            .mask{
+                                height: 350px;
+                            }
+                        }
+
+                        &:nth-of-type(even){
+                            .mask{
+                                height: 250px;
+                            }
+                        }
+
+                        .mask{
+                            width: 75%;
+                            overflow: hidden;
+
+                            margin-left: 25%;
+
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        span{
+                            position: absolute;
+
+                            &.brand{
+                                top: 0;
+                                left: -30px;
+
+                                text-align: right;
+
+                                -webkit-transform: rotateZ(-90deg);
+                                -moz-transform: rotateZ(-90deg);
+                                -ms-transform: rotateZ(-90deg);
+                                -o-transform: rotateZ(-90deg);
+                                transform: rotateZ(-90deg);
+                            }
+
+                            &.name{
+                                top: -15px;
+                                left: 25%;
+
+                                padding-left: 15px;
+
+                                font-size: 2.25em;
+
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                line-height: 1.168;
+                                height: 6.75em;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                            }
+
+                            &.id{
+                                bottom: 0;
+                                right: 0;
+
+                                padding-bottom: 30px;
+                                padding-right: 15px;
+                            }
+                        }
+
+                        a.see-detail{
+                            position: absolute;
+                            bottom: 15px;
+                            left: 25%;
+
+                            padding-left: 15px;
+                            padding-bottom: 15px;
+
+                            &:hover{
+                                color: #333;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -5,131 +5,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="YYCd-1JpezGEH694len5cfXKEwQE7Vnlr-yXu0w4X0s" />
 <meta name="p:domain_verify" content="49c9133c4755414a831a9239f07e21ed"/>
-<!-- InstanceBeginEditable name="doctitle" -->
+
 <title>MATO Creative</title>
-<!-- InstanceEndEditable -->
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/bootstrap-3.3.4-dist/css/bootstrap.min.css'); ?>">
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/font-awesome-4.3.0/css/font-awesome.css'); ?>">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/css/reset.css'); ?>">
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/css/hover.css'); ?>">
+<!-- Bootstrap 3 -->
+<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/lib/'); ?>bootstrap/css/bootstrap.min.css">
+<!-- Font Awesome 4 -->
+<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/lib/'); ?>fontAwesome/css/font-awesome.min.css">
+<!-- Animate Css -->
+<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/lib/'); ?>animate/animate.min.css">
 
 
-<script type="text/javascript" src="<?php echo site_url('assets/public/js/jquery-1.9.1.min.js'); ?>"></script>
-<script src="<?php echo site_url('assets/public/bootstrap-3.3.4-dist/js/bootstrap.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo site_url('assets/lib/'); ?>jquery/jquery.min.js"></script>
+<script src="<?php echo site_url('assets/lib/'); ?>bootstrap/js/bootstrap.min.js"></script>
 
-<link rel="shortcut icon" type="image/png" href="<?php echo site_url('assets/public/img/favicon16.png'); ?>"/>
+<link rel="shortcut icon" type="image/png" href="<?php echo site_url('assets/img/favicon16.png'); ?>"/>
 
-<script type="text/javascript">
-	function hideNav(){
 
-	}
-</script>
 </head>
 
-<body onload="hideNav()">
+<body>
 <header class="header">
-	<section class="container-fluid">
-		<div class="logo">
-			<a href="<?php echo base_url('') ?>">
-				<img src="<?php echo base_url('assets/public/img/logo.png'); ?>">
-			</a>
+	<div class="logo">
+		<a href="<?php echo base_url('') ?>">
+			<img src="<?php echo base_url('assets/img/'); ?>logo-w.png">
+		</a>
+	</div>
+	<div class="nav-btn">
+		<div id="nav-btn">
+			<span>me</span>
+			<span>nu</span>
 		</div>
-		<div class="nav-btn" id="nav-btn">
-			<span>
-				<i class="fa fa-bars" aria-hidden="true"></i> Menu
-			</span>
+	</div>
+	<div class="side-text">
+		Work
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="nav-title col-sm-6 col-sm-offset-2">
+				hello
+			</div>
 		</div>
-
-	</section>
-
-	<!--
-	<section class="container-fluid">
-    	<div class="header_logo col-lg-4 col-md-6 col-sm-6 col-xs-6">
-        	<a href="http://matocreative.vn/">
-				</a>
-        </div>
-        <div class="header_nav visible-lg">
-        	<ul>
-            	<li><a href="<?php echo base_url("homepage"); ?>">Home</a></li>
-                <li>/</li>
-                <li><a href="<?php echo base_url("about"); ?>">Về chúng tôi</a></li>
-                <li>/</li>
-                <li><a href="<?php echo base_url("services"); ?>">Dịch vụ</a></li>
-                <li>/</li>
-                <li><a href="<?php echo base_url("porfolio"); ?>">Portfolio</a></li>
-
-				<li>/</li>
-                <li><a href="<?php echo base_url("news"); ?>">Blog</a></li>
-
-                <li>/</li>
-                <li id="contact"><a href="<?php echo base_url("contact"); ?>">Liên hệ</a></li>
-            </ul>
-        </div>
-        <div class="header_nav_button col-xs-6 hidden-lg">
-        	<i class="fa fa-2x fa-navicon" id="expand_nav"></i>
-        </div>
-        <div class="header_nav_responsive col-md-6 col-sm-6 col-xs-12 hidden-lg">
-        	<button type="button" class="close" aria-label="Close" id="close_nav"><span aria-hidden="true">&times;</span></button>
-            <ul>
-		<li><a href="<?php echo base_url("homepage"); ?>">Home</a></li>
-                <li><a href="<?php echo base_url("about"); ?>">Về chúng tôi</a></li>
-                <li><a href="<?php echo base_url("services"); ?>">Dịch vụ</a></li>
-                <li><a href="<?php echo base_url("porfolio"); ?>">Portfolio</a></li>
-                <!--<li><a href="<?php echo base_url("blog"); ?>">Blog</a></li>
-                <li><a href="<?php echo base_url("contact"); ?>">Liên hệ</a></li>
-			</ul>
-        </div>
-    </section>
-    -->
+	</div>
 </header>
 
 <section class="nav">
-	<div class="left hidden-xs hidden-sm"></div>
-	<div class="right">
-		<div class="row">
-			<div class="col-sm-6 col-xs-12">
-				<ul>
-					<li><a href="<?php echo base_url("homepage"); ?>">Home</a></li>
-
-					<li><a href="<?php echo base_url("about"); ?>">Về chúng tôi</a></li>
-
-					<li><a href="<?php echo base_url("services"); ?>">Dịch vụ</a></li>
-
-					<li><a href="<?php echo base_url("porfolio"); ?>">Portfolio</a></li>
-					<!--
-					<li><a href="<?php echo base_url("news"); ?>">Blog</a></li>
-					-->
-					<li id="contact"><a href="<?php echo base_url("contact"); ?>">Liên hệ</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-6 col-xs-12">
-				<div class="hidden-xs">
-					<h2>Mato Creative</h2>
-					<br>
-					<br>
-					<h4>Địa chỉ</h4>
-					<p>Tầng 4 - 19 Nguyễn Bỉnh Khiêm</p>
-					<p>Hai Bà Trưng - Hà Nội</p>
-					<br>
-					<br>
-					<h4>Email / Hotline</h4>
-					<p>hello@matocreative.vn</p>
-					<p>(+84) 988 613 690</p>
-					<br>
-					<br>
+	<div class="container">
+		<div class="main-nav">
+			<div class="row">
+				<div class="left col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4">
+					<ul class="nav-list">
+						<li id="work">
+							<a href="<?php echo base_url('porfolio/') ?>">Work</a>
+						</li>
+						<li id="about">
+							<a href="">About Us</a>
+						</li>
+						<li id="team">
+							<a href="">Team</a>
+						</li>
+						<li id="contact">
+							<a href="">Contact</a>
+						</li>
+					</ul>
 				</div>
-				<h4>Social</h4>
-				<ul class="list-inline">
-					<li><a href="https://www.facebook.com/Mato-creative-330391013990260/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="https://www.instagram.com/mato.creative/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="https://www.pinterest.com/matocreative/boards/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
-				</ul>
+				<div class="right col-md-5 col-sm-5 hidden-xs">
+					<div class="mask">
+						<img src="https://images.unsplash.com/photo-1517493395859-9185dea5212a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1f4974ef4767ddb37270c1f3b4eb1b44&auto=format&fit=crop&w=934&q=80" alt="img Work">
+					</div>
+					<h1 class="image-text"><span>Work</span></h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="left col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4">
+					<ul class="nav-social">
+						<li>
+							<a href="">Facebook</a>
+						</li>
+						<li>
+							<a href="">Instagram</a>
+						</li>
+						<li>
+							<a href="">Behance</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
+	</div>
 
+	<div class="slogan">
+		Make <span class="bold">Simple</span> but <span class="bold">Significant</span>
 	</div>
 </section>
+
 
