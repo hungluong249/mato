@@ -1,5 +1,4 @@
 
-
 <footer class="footer container-fluid">
 	<section class="container">
     	<h5>MATO CREATIVE 2016</h5>
@@ -14,11 +13,9 @@
 <!-- InstanceBeginEditable name="script_bottom" -->
 <!-- InstanceBeginEditable name="script_bottom" -->
 
-<script src="<?php echo site_url('assets/public/js/jquery.parallax.js'); ?>"></script>
-<script src="<?php echo site_url('assets/public/script.js'); ?>"></script>
+<script src="<?php echo site_url('assets/js/'); ?>script.min.js"></script>
 
-<script src="<?php echo site_url('assets/public/js/wow.min.js') ?>"></script>
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/css/animate.css') ?>">
+<script src="<?php echo site_url('assets/lib/') ?>wow/wow.min.js"></script>
 <script>
 	new WOW().init();
 

@@ -35,7 +35,7 @@ class Projects extends Admin_Controller {
         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('project_title', 'Project name', 'trim|required');
-        $project_class = array(1 => 1, 2 => 2, 3 => 3);
+        $project_class = array('lg' => 'Large', 'md' => 'Middle', 'sm' => 'Small');
 
         $this->data['project_class'] = $project_class;
         $this->data['over_main'] = 0;
@@ -100,7 +100,7 @@ class Projects extends Admin_Controller {
         if (!$this->data['project']) {
             redirect('admin/projects', 'refresh');
         }
-        $project_class = array(1 => 1, 2 => 2, 3 => 3);
+        $project_class = array('lg' => 'Large', 'md' => 'Middle', 'sm' => 'Small');
 
         $this->data['project_class'] = $project_class;
         $this->data['over_main'] = 0;
