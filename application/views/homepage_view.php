@@ -2,24 +2,84 @@
 
 <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/scss/'); ?>homepage.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/lib/'); ?>fullpage/css/jquery.fullpage.min.css">
+
+<!--Homepage JS -->
+<script src="<?php echo site_url('assets/js/homepage.min.js'); ?>"></script>
   
 <section class="homepage">
 	<div id="fullpage">
-		<?php for ( $i = 0; $i < 3; $i ++){ ?>
+        <?php foreach ($projects as $key => $value): ?>
+        <?php if ($value['project_is_special'] == 1): ?>
+        <?php
+        $type = '';
+        $secondary_filter = '';
+        switch ($value['project_filter']) {
+            case 1:
+                $type = 'Highlights';
+                break;
+            case 2:
+                $type = 'Branding';
+                break;
+            case 3:
+                $type = 'Website';
+                break;
+            case 4:
+                $type = 'Photography';
+                break;
+            case 5:
+                $type = 'Packaging';
+                break;
+            case 6:
+                $type = 'Print';
+                break;
+            case 7:
+                $type = 'Marketing Design';
+                break;
+            default:
+                $type = '';
+                break;
+        }
+        switch ($value['project_secondary_filter']) {
+            case 1:
+                $secondary_filter = 'Highlights';
+                break;
+            case 2:
+                $secondary_filter = 'Branding';
+                break;
+            case 3:
+                $secondary_filter = 'Website';
+                break;
+            case 4:
+                $secondary_filter = 'Photography';
+                break;
+            case 5:
+                $secondary_filter = 'Packaging';
+                break;
+            case 6:
+                $secondary_filter = 'Print';
+                break;
+            case 7:
+                $secondary_filter = 'Marketing Design';
+                break;
+            default:
+                $secondary_filter = '';
+                break;
+        }
+        ?>
 
 		<div class="section">
-			<img src="https://images.unsplash.com/photo-1510919945876-42d130e37f38?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0ebcda83e8dc37429b671838c369f804&auto=format&fit=crop&w=2689&q=80" alt="img ">
+			<img src="<?php echo site_url('assets/upload/projects/' .$value['project_image_special']) ?>" alt="image project <?php echo $value['project_title'] ?> ">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="content col-md-offset-2 col-sm-offset-2">
 					<div class="head">
-						Work name - Work Client
+                        <?php echo $value['project_title'] ?> - <?php echo $value['project_customer'] ?>
 					</div>
 					<div class="body">
-						<a href="">Work name | Morbi malesuada ipsum non dapibus viverra. Phasellus luctus ipsum ac ex mollis varius. Donec nec enim nulla. Phasellus magna ex, porta vel odio at, cursus laoreet lorem</a>
+						<a href="<?php echo base_url('porfolio/detail/'. $value['project_id']) ?>"><?php echo $value['project_title'] ?></a>
 					</div>
 					<div class="foot">
-						<a href="">View detail</a>
+						<a href="<?php echo base_url('porfolio/detail/'. $value['project_id']) ?>">View detail</a>
 					</div>
 				</div>
 			</div>
@@ -27,7 +87,8 @@
 				<a href="">Quotation Request</a>
 			</div>
 		</div>
-        <?php } ?>
+            <?php endif ?>
+        <?php endforeach ?>
 
 		<!-- Section About -->
 		<div class="section">
@@ -39,10 +100,10 @@
 						Welcome to Mato Creative
 					</div>
 					<div class="body">
-						<a href="">Let's Find out Who we are</a>
+						<a href="<?php echo base_url('about/') ?>">Let's Find out Who we are</a>
 					</div>
 					<div class="foot">
-						<a href="">About Us</a>
+						<a href="<?php echo base_url('about/') ?>">About Us</a>
 					</div>
 				</div>
 			</div>

@@ -38,12 +38,12 @@
 		</div>
 	</div>
 	<div class="side-text">
-		Work
+		<span>Work</span>
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="nav-title col-sm-6 col-sm-offset-2">
-				hello
+			<div class="nav-title col-sm-6 col-sm-offset-2 hidden-xs">
+				<span>hello</span>
 			</div>
 		</div>
 	</div>
@@ -59,13 +59,13 @@
 							<a href="<?php echo base_url('porfolio/') ?>">Work</a>
 						</li>
 						<li id="about">
-							<a href="">About Us</a>
+							<a href="<?php echo base_url('about/') ?>">About Us</a>
 						</li>
 						<li id="team">
-							<a href="">Team</a>
+							<a href="<?php echo base_url('team/') ?>">Team</a>
 						</li>
 						<li id="contact">
-							<a href="">Contact</a>
+							<a href="<?php echo base_url('contact/') ?>">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -80,13 +80,13 @@
 				<div class="left col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4">
 					<ul class="nav-social">
 						<li>
-							<a href="">Facebook</a>
+							<a href="https://www.facebook.com/Mato-Creative-330391013990260/" target="_blank">Facebook</a>
 						</li>
 						<li>
-							<a href="">Instagram</a>
+							<a href="https://www.instagram.com/mato.creative/" target="_blank">Instagram</a>
 						</li>
 						<li>
-							<a href="">Behance</a>
+							<a href="https://www.pinterest.com/matocreative/" target="_blank">Pinterest</a>
 						</li>
 					</ul>
 				</div>

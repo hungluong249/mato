@@ -55,7 +55,9 @@ class Projects extends Admin_Controller {
                 $image_json = json_encode($description_image);
                 $project_data = array(
                     'project_title' => $this->input->post('project_title'),
+                    'project_color' => $this->input->post('project_color'),
                     'project_customer' => $this->input->post('project_customer'),
+                    'project_year' => $this->input->post('project_year'),
                     'project_location' => $this->input->post('project_location'),
                     'project_type' => $this->input->post('project_type'),
                     'project_description_image' => $image_json,
@@ -123,7 +125,9 @@ class Projects extends Admin_Controller {
 
                 $project_data = array(
                     'project_title' => $this->input->post('project_title'),
+                    'project_color' => $this->input->post('project_color'),
                     'project_customer' => $this->input->post('project_customer'),
+                    'project_year' => $this->input->post('project_year'),
                     'project_location' => $this->input->post('project_location'),
                     'project_type' => $this->input->post('project_type'),
                     'project_description' => $this->input->post('project_description'),

@@ -2,7 +2,7 @@
 ===============================
 ===============================
 
-CSS for Homepage
+CSS for Team
 Author: hung.luong@matocreative.vn
 
 ===============================
@@ -251,87 +251,83 @@ footer {
 
   footer .bottom {
     padding-top: 150px; } }
-.homepage #fullpage .section {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative; }
-  .homepage #fullpage .section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 900; }
-  .homepage #fullpage .section .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 901;
-    background-color: rgba(0, 0, 0, 0.5); }
-  .homepage #fullpage .section .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 902;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-    .homepage #fullpage .section .container .content {
-      padding-top: 40vh; }
-      .homepage #fullpage .section .container .content a {
-        color: #fff; }
-      .homepage #fullpage .section .container .content .head {
+.team {
+  padding-top: 280px; }
+  .team .team-head {
+    padding-left: 100px;
+    padding-right: 100px; }
+    .team .team-head .row .item h1 {
+      font-size: 4.375em;
+      margin-top: 0; }
+    .team .team-head .row .item p {
+      font-size: 1.5em; }
+  .team .team-cover {
+    margin-top: 150px;
+    padding-left: 0;
+    padding-right: 0;
+    height: 70vh;
+    background-color: #ffde00; }
+    .team .team-cover .mask {
+      width: 80%;
+      height: 100%;
+      margin-left: 10%;
+      margin-top: 100px;
+      overflow: hidden; }
+  .team .team-detail {
+    margin-top: 200px;
+    padding-left: 0;
+    padding-right: 0; }
+    .team .team-detail .row .item .background {
+      width: 100%;
+      height: 300px;
+      background-color: rgba(0, 0, 0, 0.2); }
+      .team .team-detail .row .item .background .mask {
+        width: 40%;
+        height: 100%;
+        margin-left: 30%;
+        overflow: hidden; }
+    .team .team-detail .row .item .text {
+      width: 100%;
+      text-align: center; }
+      .team .team-detail .row .item .text h3 {
+        font-size: 1.875em; }
+      .team .team-detail .row .item .text p {
         font-size: 0.875em;
-        color: #fff;
-        margin-bottom: 55px; }
-      .homepage #fullpage .section .container .content .body {
-        font-size: 4.375em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        line-height: 1.2;
-        max-height: 4em;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical; }
-      .homepage #fullpage .section .container .content .foot {
-        font-size: 0.875em;
-        margin-top: 55px; }
-        .homepage #fullpage .section .container .content .foot a {
-          color: #999;
-          text-decoration: underline;
-          text-transform: uppercase; }
-          .homepage #fullpage .section .container .content .foot a:hover {
-            color: #fff; }
-  .homepage #fullpage .section .quotation-request {
-    position: absolute;
-    top: 300px;
-    left: 10px;
-    z-index: 901;
-    -webkit-transform: rotateZ(-90deg);
-    -moz-transform: rotateZ(-90deg);
-    -ms-transform: rotateZ(-90deg);
-    -o-transform: rotateZ(-90deg);
-    transform: rotateZ(-90deg); }
-    .homepage #fullpage .section .quotation-request a {
-      color: #fff; }
+        color: #999; }
+      .team .team-detail .row .item .text ul li a {
+        font-size: 0.875em; }
 
 @media (max-width: 768px) {
-  .homepage #fullpage .section .container {
-    width: 80%;
-    margin-left: 5%; }
-    .homepage #fullpage .section .container .content {
-      padding-top: 20vh; }
-      .homepage #fullpage .section .container .content .head {
-        font-size: 0.875em;
-        color: #fff;
-        margin-bottom: 50px; }
-      .homepage #fullpage .section .container .content .foot {
-        margin-top: 50px; }
-  .homepage #fullpage .section .quotation-request {
-    top: 300px;
-    left: -30px; } }
+  .team {
+    padding-top: 20vh; }
+    .team .team-head {
+      padding-left: 15px;
+      padding-right: 15px; }
+    .team .team-cover {
+      margin-top: 50px;
+      height: 50vh; }
+    .team .team-detail {
+      margin-top: 200px;
+      padding-left: 0;
+      padding-right: 0; }
+      .team .team-detail .row .item .background {
+        width: 100%;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.2); }
+        .team .team-detail .row .item .background .mask {
+          width: 40%;
+          height: 100%;
+          margin-left: 30%;
+          overflow: hidden; }
+      .team .team-detail .row .item .text {
+        width: 100%;
+        text-align: center; }
+        .team .team-detail .row .item .text h3 {
+          font-size: 1.875em; }
+        .team .team-detail .row .item .text p {
+          font-size: 0.875em;
+          color: #999; }
+        .team .team-detail .row .item .text ul li a {
+          font-size: 0.875em; } }
 
-/*# sourceMappingURL=homepage.css.map */
+/*# sourceMappingURL=team.css.map */

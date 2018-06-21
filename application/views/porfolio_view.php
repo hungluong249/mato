@@ -1,6 +1,12 @@
 <!-- Work Style-->
 <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/scss/portfolio.min.css'); ?>">
 
+<!-- Animate CSS-->
+<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/lib/animate/animate.min.css'); ?>">
+
+<!--Portfolio JS -->
+<script src="<?php echo site_url('assets/js/portfolio.min.js'); ?>"></script>
+
 <section class="work">
 	<div class="cover">
 		<div class="overlay"></div>
@@ -51,6 +57,10 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
 				<div class="work-content col-sm-9 col-sm-offset-1 col-xs-12">
 					<div class="grid">
 						<div class="grid-sizer"></div>
@@ -112,16 +122,18 @@
                             }
                             ?>
 
-							<div class="grid-item mix <?php echo strtolower($type); ?> <?php echo strtolower($secondary_filter); ?> <?php echo $project['project_class'] ?>">
-								<div class="mask">
-									<img src="<?php echo base_url('assets/upload/projects/' . $project['project_avatar']); ?>" alt="project image">
-								</div>
-								<span class="brand"><?php echo $project['project_customer']; ?></span>
-								<span class="name"><?php echo $project['project_title']; ?></span>
+							<div class="grid-item mix <?php echo strtolower($type); ?> <?php echo strtolower($secondary_filter); ?> <?php echo $project['project_class'] ?> wow fadeInUp">
+								<a href="<?php echo base_url('porfolio/detail/'. $project['project_id']) ?>">
+									<div class="mask">
+										<img src="<?php echo base_url('assets/upload/projects/' . $project['project_avatar']); ?>" alt="project image">
+									</div>
+									<span class="brand"><?php echo $project['project_customer']; ?></span>
+									<span class="name"><?php echo $project['project_title']; ?></span>
 
 
-								<a class="see-detail" href="<?php echo base_url('porfolio/detail/'. $project['project_id']) ?>" >View Work</a>
-								<span class="id"><?php echo $project['project_id']; ?></span>
+									<a class="see-detail" href="<?php echo base_url('porfolio/detail/'. $project['project_id']) ?>" >View Work</a>
+									<span class="id"><?php echo $project['project_id']; ?></span>
+								</a>
 							</div>
 
                         <?php endforeach; ?>
@@ -132,223 +144,49 @@
 	</div>
 </section>
 
-<section id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
-
-	<!-- Indicators -->
-
-	<!--
-	<ol class="carousel-indicators">
-		<li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
-		<li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
-		<li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
-	</ol>
-	-->
-
-	<!-- Wrapper For Slides -->
-	<div class="carousel-inner" role="listbox">
-
-		<!-- Third Slide -->
-		<?php foreach ($projects as $key => $value): ?>
-			<?php if ($value['project_is_special'] == 1): ?>
-                <?php
-                $type = '';
-                $secondary_filter = '';
-                switch ($value['project_filter']) {
-                    case 1:
-                        $type = 'Highlights';
-                        break;
-                    case 2:
-                        $type = 'Branding';
-                        break;
-                    case 3:
-                        $type = 'Website';
-                        break;
-                    case 4:
-                        $type = 'Photography';
-                        break;
-                    case 5:
-                        $type = 'Packaging';
-                        break;
-                    case 6:
-                        $type = 'Print';
-                        break;
-                    case 7:
-                        $type = 'Marketing Design';
-                        break;
-                    default:
-                        $type = '';
-                        break;
-                }
-                switch ($value['project_secondary_filter']) {
-                    case 1:
-                        $secondary_filter = 'Highlights';
-                        break;
-                    case 2:
-                        $secondary_filter = 'Branding';
-                        break;
-                    case 3:
-                        $secondary_filter = 'Website';
-                        break;
-                    case 4:
-                        $secondary_filter = 'Photography';
-                        break;
-                    case 5:
-                        $secondary_filter = 'Packaging';
-                        break;
-                    case 6:
-                        $secondary_filter = 'Print';
-                        break;
-                    case 7:
-                        $secondary_filter = 'Marketing Design';
-                        break;
-                    default:
-                        $secondary_filter = '';
-                        break;
-                }
-                ?>
-				<div class="item <?php echo ($key == 0)? 'active' : '' ?>">
-					<!-- Slide Background -->
-					<div class="mask" data-animation="animated fadeInLeft">
-						<img src="<?php echo site_url('assets/upload/projects/' .$value['project_image_special']) ?>" alt="slide img 1"  class="slide-image"/>
-					</div>
-
-					<!-- Slide Text Layer -->
-					<div class="slide-text">
-						<span class="nation" data-animation="animated slideInLeft"><?php echo $value['project_location'] ?></span>
-						<span class="name" data-animation="animated fadeInUp"><?php echo $value['project_title'] ?></span>
-						<span class="brand" data-animation="animated fadeInUp"><?php echo $value['project_customer'] ?></span>
-						<span class="field" data-animation="animated fadeInUp"><?php echo $type ?> - <?php echo $secondary_filter ?></span>
-						<p data-animation="animated fadeInUp"><?php echo $value['project_description'] ?></p>
-						<a href="<?php echo base_url('porfolio/detail/'. $value['project_id']) ?>" class="btn btn-primary" data-animation="animated fadeInLeft">More Info</a>
-					</div>
-
-				</div>
-			<?php endif ?>
-		<?php endforeach ?>
-		<!-- End of Slide -->
-
-
-	</div><!-- End of Wrapper For Slides -->
-
-	<!-- Left Control -->
-	<a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
-		<span class="fa fa-angle-left" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	</a>
-
-	<!-- Right Control -->
-	<a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
-		<span class="fa fa-angle-right" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	</a>
-
-	<div class="share">
-
-	</div>
-
-</section> <!-- End  bootstrap-touch-slider Slider -->
-
-<section class="porfolio container-fluid">
-	<div class="porfolio-control">
-		<ul class="nav nav-pills nav-justified">
-			<li><a class="filter" data-filter="*">Tất cả</a></li>
-			<!--
-			<li><a class="filter" data-filter=".highlights">Dự án nổi bật</a></li>
-			-->
-			<li><a class="filter" data-filter=".branding">Branding</a></li>
-			<li><a class="filter" data-filter=".website">Website</a></li>
-			<li><a class="filter" data-filter=".photography">Photography</a></li>
-			<li><a class="filter" data-filter=".packaging">Packaging</a></li>
-			<li><a class="filter" data-filter=".print">Print</a></li>
-			<li><a class="filter" data-filter=".marketing">Marketing</a></li>
-		</ul>
-	</div>
-	<div class="portfolio-content row">
-		<div class="grid">
-			<div class="grid-sizer"></div>
-
-<!--            --><?php //foreach ($projects as $key => $project): ?>
-<!--				--><?php
-//				$type = '';
-//				$secondary_filter = '';
-//				switch ($project['project_filter']) {
-//					case 1:
-//						$type = 'Highlights';
-//						break;
-//					case 2:
-//						$type = 'Branding';
-//						break;
-//					case 3:
-//						$type = 'Website';
-//						break;
-//					case 4:
-//						$type = 'Photography';
-//						break;
-//					case 5:
-//						$type = 'Packaging';
-//						break;
-//					case 6:
-//						$type = 'Print';
-//						break;
-//					case 7:
-//						$type = 'Marketing Design';
-//						break;
-//					default:
-//						$type = '';
-//						break;
-//				}
-//				switch ($project['project_secondary_filter']) {
-//					case 1:
-//						$secondary_filter = 'Highlights';
-//						break;
-//					case 2:
-//						$secondary_filter = 'Branding';
-//						break;
-//					case 3:
-//						$secondary_filter = 'Website';
-//						break;
-//					case 4:
-//						$secondary_filter = 'Photography';
-//						break;
-//					case 5:
-//						$secondary_filter = 'Packaging';
-//						break;
-//					case 6:
-//						$secondary_filter = 'Print';
-//						break;
-//					case 7:
-//						$secondary_filter = 'Marketing Design';
-//						break;
-//					default:
-//						$secondary_filter = '';
-//						break;
-//				}
-//				?>
-<!---->
-<!--			<div class="grid-item mix --><?php //echo strtolower($type); ?><!-- --><?php //echo strtolower($secondary_filter); ?><!-- --><?php //echo $project['project_class'] ?><!--">-->
-<!--				<div class="inner">-->
-<!--					<img src="--><?php //echo base_url('assets/upload/projects/' . $project['project_avatar']); ?><!--" alt="img du an">-->
-<!--					<div class="overlay"></div>-->
-<!--					<div class="top">-->
-<!--						<span class="nation">--><?php //echo $project['project_location']; ?><!--</span>-->
-<!--						<span class="name">--><?php //echo $project['project_title']; ?><!--</span>-->
-<!--						<span class="brand">--><?php //echo $project['project_customer']; ?><!--</span>-->
-<!--						<br>-->
-<!--						<span class="field">--><?php //echo $type . (($secondary_filter != '') ? (' - ' . $secondary_filter) : $secondary_filter); ?><!--</span>-->
-<!--					</div>-->
-<!--					<div class="bottom">-->
-<!--						<a class="btn btn-outline" role="button" href="--><?php //echo base_url('porfolio/detail/'. $project['project_id']) ?><!--" >Explore</a>-->
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!---->
-<!--            --><?php //endforeach; ?>
+<footer class="footer container-fluid">
+	<section class="container">
+		<div class="row">
+			<div class="col-sm-9 col-sm-offset-3 col-xs-12">
+				<ul class="list-inline">
+					<li>
+						<a href="<?php echo base_url('porfolio/') ?>">Work</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url('about/') ?>">About Us</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url('team/') ?>">Team</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url('contact/') ?>">Contact</a>
+					</li>
+				</ul>
+				<h5>MATO CREATIVE 2018</h5>
+			</div>
 		</div>
+	</section>
+	<section class="bottom container-fluid" style="background-image: url('https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=79cbb47c2fa1dab8479b31a61567638a&auto=format&fit=crop&w=1867&q=80')">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-offset-3 col-xs-12">
+					<p>Wanna Start a Project</p>
+					<h1>
+						<a href="<?php echo base_url('contact/') ?>">
+							<b>Starting</b> Right now
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
 
-	</div>
-</section>
-
-<script src="<?php echo site_url('assets/public/js/sliderScript.js') ?>"></script>
+<script src="<?php echo base_url('assets/lib/wow/wow.min.js') ?>"></script>
+<script>
+    new WOW().init();
+</script>
 
 <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
@@ -369,18 +207,15 @@
     });
 
     // filter items on button click
-    $('.porfolio-control ul li').on( 'click', 'a', function() {
+    $('.work-control ul li').on( 'click', 'a', function() {
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
     });
 
     // layout Isotope after each image loads
-	$grid.imagesLoaded().progress( function() {
+    $grid.imagesLoaded().progress( function() {
         $grid.isotope('layout');
     });
 
-
-
-
-
 </script>
+

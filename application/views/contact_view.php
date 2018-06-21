@@ -1,72 +1,245 @@
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/scss/contact.min.css'); ?>">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<section class="map" id="map">
-</section>
+<!-- Contact Style-->
+<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/scss/contact.min.css'); ?>">
 
-<section class="contact container">
-	<div class="title">
-		<div class="heading">
-			<h4>Liên hệ với chúng tôi</h4>
-			<h1>Mato Creative</h1>
+<!--Contact JS -->
+<script src="<?php echo site_url('assets/js/contact.min.js'); ?>"></script>
+
+
+<section class="contact container-fluid">
+	<div class="contact-head container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+				<div class="heading">
+					<h4 class="sub-title">Come and Talk with US</h4>
+					<h1 class="title">
+						Feeling <b>Free</b> to <b>Say Hello</b>
+					</h1>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="left col-md-4 col-sm-4 col-xs-12">
-			<h4>Địa chỉ</h4>
-			<p>Tầng 4 - 19 Nguyễn Bỉnh Khiêm</p>
-			<p>Hai Bà Trưng - Hà Nội</p>
-			<br>
-			<h4>Email / Hotline</h4>
-			<p>hello@matocreative.vn</p>
-			<p>(+84) 988 613 690</p>
-		</div>
-		<div class="right col-md-8 col-sm-8 col-xs-12">
-			<div>
-				<span style="color:red"><?php echo $this->session->flashdata('message'); ?></span>
+	<div class="contact-body container">
+		<div class="row">
+			<div class="intro col-sm-8 col-sm-offset-3 col-xs-12">
+				<p>Vestibulum malesuada ipsum egestas gravida aliquam. Nullam pretium, massa non egestas congue, est dui tincidunt nunc, a eleifend dolor lorem id libero.</p>
 			</div>
-            <?php
-            echo form_open_multipart(base_url('contact/send_mail'), array('class' => 'form-horizontal'));
-            ?>
-			<div class="row">
-				<div class="col-md-6 col-sm-6 col-xs-12">
-                    <?php
-                    echo form_error('contact_name');
-                    echo form_input('contact_name', set_value('contact_name'), 'class="form-control" id="InputName" placeholder="Name"');
-                    ?>
+			<div class="info col-sm-8 col-sm-offset-4 col-xs-12">
+				<div class="time" id="time">
+					<h1></h1>
 				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12">
-                    <?php
-                    echo form_error('contact_phone');
-                    echo form_input('contact_phone', set_value('contact_phone'), 'class="form-control" id="InputPhone" placeholder="Phone"');
-                    ?>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<h3>Our Address</h3>
+						<p>4th Floor</p>
+						<p>19 Nguyen Binh Khiem Street, Hai Ba Trung Dictrict,</p>
+						<p>Hanoi, Vietnam</p>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<h3>Contact Us</h3>
+						<p><a href="tel:(+84) 988 613 690">(+84) 988 613 690</a></p>
+						<p><a href="mailto: hello@matocreative.vn">hello@matocreative.vn</a></p>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12">
-                    <?php
-                    echo form_error('contact_email');
-                    echo form_input('contact_email', set_value('contact_email'), 'class="form-control" id="InputMail" placeholder="Email"');
-                    ?>
-				</div>
+			<div class="follow col-sm-8 col-sm-offset-3 col-xs-12">
+				<h4>Follow Us on</h4>
+				<ul class="list-inline">
+					<li>
+						<a href="https://www.facebook.com/Mato-Creative-330391013990260/" target="_blank">Facebook</a>
+					</li>
+					<li>/</li>
+					<li>
+						<a href="https://www.instagram.com/mato.creative/" target="_blank">Instagram</a>
+					</li>
+					<li>/</li>
+					<li>
+						<a href="https://www.pinterest.com/matocreative/" target="_blank">Pinterest</a>
+					</li>
+				</ul>
 			</div>
-			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12">
-                    <?php
-                    echo form_error('contact_content');
-                    echo form_textarea('contact_content', set_value('contact_content', ''), 'class="form-control" rows="5" placeholder="Message..."');
-                    ?>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4 col-xs-12">
-                    <?php echo form_submit('submit', 'Gửi tin nhắn', 'class="btn btn-default button"'); ?>
-				</div>
-			</div>
-			<?php
-            echo form_close();
-            ?>
 		</div>
 	</div>
+
+	<div class="contact-request container">
+		<div class="background"></div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 col-xs-12">
+				<div class="heading">
+					<h4 class="sub-title">Send us a Message</h4>
+					<h1 class="title">
+						Fill this <b>Form</b>, please!
+					</h1>
+				</div>
+				<div class="body">
+                    <?php
+                    echo form_open_multipart(base_url('contact/send_mail'), array('class' => 'form-horizontal'));
+                    ?>
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+                            <?php
+                            echo form_error('contact_name');
+                            echo form_input('contact_name', set_value('contact_name'), 'class="form-control" id="InputName" placeholder="Name"');
+                            ?>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+                            <?php
+                            echo form_error('contact_phone');
+                            echo form_input('contact_phone', set_value('contact_phone'), 'class="form-control" id="InputPhone" placeholder="Phone"');
+                            ?>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+                            <?php
+                            echo form_error('contact_email');
+                            echo form_input('contact_email', set_value('contact_email'), 'class="form-control" id="InputMail" placeholder="Email"');
+                            ?>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+                            <?php
+                            echo form_error('contact_content');
+                            echo form_textarea('contact_content', set_value('contact_content', ''), 'class="form-control" rows="5" placeholder="Message..."');
+                            ?>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-12">
+                            <?php echo form_submit('submit', 'Send your Message', 'class="btn btn-default button"'); ?>
+						</div>
+					</div>
+                    <?php
+                    echo form_close();
+                    ?>
+				</div>
+
+				<div class="heading">
+					<h4 class="sub-title">Wanna Start a Project</h4>
+					<h1 class="title">
+						Start <b>Right now</b>
+					</h1>
+					<a data-toggle="collapse" href="#requestForm" aria-expanded="false" aria-controls="requestForm">Request Form</a>
+
+					<div class="collapse" id="requestForm">
+                        <?php
+                        echo form_open_multipart(base_url('contact/send_mail'), array('class' => 'form-horizontal'));
+                        ?>
+						<h3>How can we contact you?</h3>
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+                                <?php
+                                echo form_error('request_name');
+                                echo form_input('request_name', set_value('request_name'), 'class="form-control" id="request_name" placeholder="Name"');
+                                ?>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+                                <?php
+                                echo form_error('request_position');
+                                echo form_input('request_position', set_value('request_position'), 'class="form-control" id="request_position" placeholder="Position"');
+                                ?>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+                                <?php
+                                echo form_error('request_company');
+                                echo form_input('request_company', set_value('request_company'), 'class="form-control" id="request_company" placeholder="Company"');
+                                ?>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+                                <?php
+                                echo form_error('request_email');
+                                echo form_input('request_email', set_value('request_email'), 'class="form-control" id="request_email" placeholder="Email"');
+                                ?>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+                                <?php
+                                echo form_error('request_phone');
+                                echo form_input('request_phone', set_value('request_phone'), 'class="form-control" id="request_phone" placeholder="Phone Number"');
+                                ?>
+							</div>
+						</div>
+
+						<h3>Which service are you looking for?</h3>
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<div class="checkbox">
+									<label>
+                                        <?php
+                                        echo form_error('request_service');
+                                        echo form_checkbox('request_service', 'Branding', FALSE);
+                                        echo 'Branding';
+                                        ?>
+									</label>
+								</div>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<div class="checkbox">
+									<label>
+                                        <?php
+                                        echo form_error('request_service');
+                                        echo form_checkbox('request_service', 'Website Design', FALSE);
+                                        echo 'Website Design';
+                                        ?>
+									</label>
+								</div>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<div class="checkbox">
+									<label>
+                                        <?php
+                                        echo form_error('request_service');
+                                        echo form_checkbox('request_service', 'Photography', FALSE);
+                                        echo 'Photography';
+                                        ?>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<h3>Can you tell us about your budget and timeline?</h3>
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+                                <?php
+                                echo form_error('request_budget');
+                                echo form_dropdown('request_budget', $option = array('0' => 'Select One','1' => 'Under 10M', '2' => '10M - 30M', '3' => 'Above 30M'), 0, 'class="form-control"')
+                                ?>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+                                <?php
+                                echo form_error('request_timeline');
+                                echo form_dropdown('request_timeline', $option = array('0' => 'Select One','1' => 'Under 1 month', '2' => '1 month - 3 month', '3' => 'Above 3 month'), 0, 'class="form-control"')
+                                ?>
+							</div>
+						</div>
+
+						<h3>Tell us more about your plan?</h3>
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+                                <?php
+                                echo form_error('request_plan');
+                                echo form_textarea('request_plan', set_value('request_plan', ''), 'class="form-control" rows="5" placeholder="Describe about your plan..."');
+                                ?>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+                                <?php echo form_submit('submit', 'Submit your Request', 'class="btn btn-default button"'); ?>
+							</div>
+						</div>
+                        <?php
+                        echo form_close();
+                        ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 </section>
 
 

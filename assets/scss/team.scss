@@ -1,0 +1,170 @@
+/*
+===============================
+===============================
+
+CSS for Team
+Author: hung.luong@matocreative.vn
+
+===============================
+===============================
+ */
+
+
+
+@import "main";
+
+.team{
+    padding-top: 280px;
+
+    .team-head{
+        padding-left: 100px;
+        padding-right: 100px;
+
+        .row{
+            .item{
+                h1{
+                    font-size: 4.375em;
+                    margin-top: 0;
+                }
+
+                p{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    .team-cover{
+        margin-top: 150px;
+
+        padding-left: 0;
+        padding-right: 0;
+
+        height: 70vh;
+
+        background-color: $primary;
+
+        .mask{
+            width: 80%;
+            height: 100%;
+            margin-left: 10%;
+            margin-top: 100px;
+
+            overflow: hidden;
+        }
+    }
+
+    .team-detail{
+        margin-top: 200px;
+        padding-left: 0;
+        padding-right: 0;
+
+        .row{
+            .item{
+                .background{
+                    width: 100%;
+                    height: 300px;
+
+                    background-color: rgba(0,0,0,0.2);
+
+                    .mask{
+                        width: 40%;
+                        height: 100%;
+
+                        margin-left: 30%;
+
+                        overflow: hidden;
+                    }
+                }
+
+                .text{
+                    width: 100%;
+                    text-align: center;
+
+                    h3{
+                        font-size: 1.875em;
+                    }
+
+                    p{
+                        font-size: 0.875em;
+                        color: #999;
+                    }
+
+                    ul{
+                        li{
+                            a{
+                                font-size: 0.875em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .team{
+        padding-top: 20vh;
+
+        .team-head{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .team-cover{
+            margin-top: 50px;
+
+            height: 50vh;
+
+        }
+
+        .team-detail{
+            margin-top: 200px;
+            padding-left: 0;
+            padding-right: 0;
+
+            .row{
+                .item{
+                    .background{
+                        width: 100%;
+                        height: 300px;
+
+                        background-color: rgba(0,0,0,0.2);
+
+                        .mask{
+                            width: 40%;
+                            height: 100%;
+
+                            margin-left: 30%;
+
+                            overflow: hidden;
+                        }
+                    }
+
+                    .text{
+                        width: 100%;
+                        text-align: center;
+
+                        h3{
+                            font-size: 1.875em;
+                        }
+
+                        p{
+                            font-size: 0.875em;
+                            color: #999;
+                        }
+
+                        ul{
+                            li{
+                                a{
+                                    font-size: 0.875em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

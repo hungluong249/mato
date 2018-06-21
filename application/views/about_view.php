@@ -1,155 +1,177 @@
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/scss/about.min.css'); ?>">
+<!-- About Style-->
+<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/scss/about.min.css'); ?>">
 
-<section class="cover cover-about">
-	<div class="cover-inner">
-    	<img src="<?php echo base_url("assets/public/img/cover/cover_about.jpg"); ?>">
-    </div>
-    <div class="cover-wrapper">
-    </div>
-</section>
+<!-- About JS -->
+<script src="<?php echo site_url('assets/js/about.min.js'); ?>"></script>
 
-
-<section class="intro container">
-	<div class="title">
-		<div class="heading">
-			<h4>Giới thiệu</h4>
-			<h1>Mato Creative</h1>
-		</div>
-		<div class="content">
-			<p>Mato Creative là công ty chuyên sâu về thiết kế nhận diện và truyền thông thương hiệu. Chúng tôi cung cấp một giải pháp về hình ảnh toàn diện để giúp doanh nghiệp nâng cao năng lực cạnh tranh trên thị trường. Chúng tôi luôn giao tiếp cởi mở và lắng nghe yêu cầu của khách hàng để có thể đảm bảo thấu hiểu yêu cầu sáng tạo ngay từ khi mới bắt đầu và đảm bảo tính nhất quán trong suốt quá trình thực thi dự án. Cam kết mang lại những giải pháp sáng tạo và hiệu quả, Mato Creative đồng hành cùng doanh nghiệp xây dựng thương hiệu phát triển.</p>
-		</div>
-	</div>
-</section>
-
-<section class="services container">
-	<div class="title">
-		<div class="heading">
-			<h4>Giới thiệu</h4>
-			<h1>Dịch vụ chính</h1>
-		</div>
-	</div>
-
-	<div class="content row">
-
-		<div class="item col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0s">
-			<a href="<?php echo base_url("services"); ?>" class="services_hover">
-				<div class="item_head">
-					<i class="flaticon-light-bulb"></i>
-				</div>
-				<div class="item_body">
-					<h4>Branding</h4>
-					<!--<p>Branding takes a very important part in customer’s decision making.</p>-->
-				</div>
-			</a>
-		</div>
-		<div class="item col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.1s">
-			<a href="<?php echo base_url("services"); ?>" class="services_hover">
-				<div class="item_head">
-					<i class="flaticon-devices"></i>
-				</div>
-				<div class="item_body">
-					<h4>Website Design</h4>
-					<!--<p>Branding takes a very important part in customer’s decision making.</p>-->
-				</div>
-			</a>
-		</div>
-		<div class="item col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
-			<a href="<?php echo base_url("services"); ?>" class="services_hover">
-				<div class="item_head">
-					<i class="flaticon-photo-camera"></i>
-				</div>
-				<div class="item_body">
-					<h4>Photography</h4>
-					<!--<p>Branding takes a very important part in customer’s decision making.</p>-->
-				</div>
-			</a>
-		</div>
-		<div class="item col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-			<a href="<?php echo base_url("services"); ?>" class="services_hover">
-				<div class="item_head">
-					<i class="flaticon-book"></i>
-				</div>
-				<div class="item_body">
-					<h4>Packaging</h4>
-					<!--<p>Branding takes a very important part in customer’s decision making.</p>-->
-				</div>
-			</a>
-		</div>
-		<div class="item col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
-			<a href="<?php echo base_url("services"); ?>" class="services_hover">
-				<div class="item_head">
-					<i class="flaticon-symbol"></i>
-				</div>
-				<div class="item_body">
-					<h4>Marketing Design</h4>
-					<!--<p>Branding takes a very important part in customer’s decision making.</p>-->
-				</div>
-			</a>
-		</div>
-		<div class="item col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".5s">
-			<a href="<?php echo base_url("services"); ?>" class="services_hover">
-				<div class="item_head">
-					<i class="flaticon-printer"></i>
-				</div>
-				<div class="item_body">
-					<h4>Print</h4>
-					<!--<p>Branding takes a very important part in customer’s decision making.</p>-->
-				</div>
-			</a>
-		</div>
-	</div>
-</section>
-
-<section class="clients container">
-	<div class="title">
-		<div class="heading">
-			<h4>Giới thiệu</h4>
-			<h1>Khách hàng</h1>
-		</div>
-	</div>
-	<div class="row">
-		<?php if ($partners): ?>
-		<?php foreach ($partners as $key => $value): ?>
-			<div class="item col-sm-3 col-xs-6">
-				<img src="<?php echo base_url("assets/upload/partners/" .$value['image']); ?>">
-			</div>
-		<?php endforeach ?>
-		<?php endif ?>
-	</div>
-
-</section>
-
-<section class="team container">
-	<div class="title">
-		<div class="heading">
-			<h4>Giới thiệu</h4>
-			<h1>Team</h1>
-		</div>
-	</div>
-
-	<div class="row">
-		<?php if ($teams): ?>
-		<?php foreach ($teams as $key => $value): ?>
-		<div class="item col-sm-3 col-xs-12 wow zoomIn" data-wow-delay="0s">
-			<div class="inner">
-				<img src="<?php echo base_url("assets/upload/teams/" .$value['image']); ?>">
-				<div class="wrapper">
-					<div class="content">
-						<h3><?php echo $value['name'] ?></h3>
-						<p><?php echo $value['position'] ?></p>
-						<a href="<?php echo $value['facebook'] ?>" target="_blank"><i class="fa fa-2x fa-facebook"></i></a>
-						<?php if ($value['instagram'] != ''): ?>
-							<a href="<?php echo $value['instagram'] ?>" target="_blank"><i class="fa fa-2x fa-instagram"></i></a>
-						<?php endif ?>
+<section class="about">
+	<div class="about-title container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-2 col-xs-12">
+					<div class="heading">
+						<h4 class="sub-title">We are Mato Creative</h4>
+						<h1 class="title">
+							Welcome to <b>Mato Creative</b>
+						</h1>
+						<a href="#about-head">Scroll Down</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<?php endforeach ?>
-		<?php endif ?>
 	</div>
 
+	<div class="about-cover">
+		<div class="mask">
+			<img src="<?php echo base_url("assets/public/img/cover/cover_about.jpg"); ?>" alt="About Cover Image">
+		</div>
+	</div>
+
+	<div class="about-head" id="about-head">
+		<div class="container">
+			<h1>Services</h1>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-3 col-xs-12">
+					<p>Mato Creative is a company specialized in brand identity design and communication. We provide a comprehensive image solution to help businesses improve their competitiveness in the marketplace. We always communicate openly and listen to our customers' requests so that we can understand the creative requirements from the very beginning and ensure consistency throughout the project implementation. Commitment to innovative and effective solutions, Mato Creative co-operates with brand building business development.</p>
+				</div>
+				<div class="col-sm-8 col-sm-offset-4 col-xs-12">
+					<div class="row">
+						<div class="item col-sm-4 col-xs-12 wow fadeInRight">
+							<h3>Branding</h3>
+							<ul class="list-unstyled">
+								<h1>1/</h1>
+
+								<li>Tư vấn thương hiệu</li>
+								<li>Tính cách thương hiệu</li>
+								<li>Đặt tên và slogan</li>
+								<li>Logotype</li>
+								<li>Ứng dụng thương hiệu</li>
+								<li>Hệ thống nhận diện trực quan</li>
+								<li>Nhận diện thương hiệu</li>
+								<li>Môi trường thương hiệu</li>
+								<li>Kiến trúc thương hiệu</li>
+								<li>Hình ảnh thương hiệu</li>
+								<li>Nội dung thương hiệu</li>
+							</ul>
+						</div>
+						<div class="item col-sm-4 col-xs-12 wow fadeInRight">
+							<h3>Web Design</h3>
+							<ul class="list-unstyled">
+								<h1>2/</h1>
+
+								<li>Thiết kế Website</li>
+								<li>Phát triển Website</li>
+								<li>Landing page</li>
+								<li>Thiết kế giao diện người dùng</li>
+							</ul>
+						</div>
+						<div class="item col-sm-4 col-xs-12 wow fadeInRight">
+							<h3>Photography</h3>
+							<ul class="list-unstyled">
+								<h1>3/</h1>
+
+								<li>Photography</li>
+								<li>Digital imaging/ Retouch</li>
+								<li>Xử lý hình ảnh</li>
+								<li>Lookbook</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="item col-sm-4 col-xs-12 wow fadeInRight">
+							<h3>Packaging</h3>
+							<ul class="list-unstyled">
+								<h1>4/</h1>
+
+								<li>Thiết kế bao bì sản phẩm</li>
+								<li>Thiết kế nhãn hàng</li>
+								<li>Naming & Slogan</li>
+							</ul>
+						</div>
+						<div class="item col-sm-4 col-xs-12 wow fadeInRight">
+							<h3>Marketing Design</h3>
+							<ul class="list-unstyled">
+								<h1>5/</h1>
+
+								<li>Thiết kế thư điện tử quảng cáo</li>
+								<li>Banner quảng cáo</li>
+								<li>Quảng cáo in ấn</li>
+								<li>Brochure/ Catalouge</li>
+								<li>Salekit</li>
+							</ul>
+						</div>
+						<div class="item col-sm-4 col-xs-12 wow fadeInRight">
+							<h3>Print</h3>
+							<ul class="list-unstyled">
+								<h1>6/</h1>
+
+								<li>Tư vấn in ấn</li>
+								<li>In offset</li>
+								<li>Báo cáo thường niên</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="about-clients">
+		<div class="row">
+			<div class="left col-sm-6 col-xs-12">
+				<h1>Clients</h1>
+				<p></p>
+			</div>
+			<div class="right col-sm-6 col-xs-12">
+				<div class="row">
+                    <?php if ($partners): ?>
+                        <?php foreach ($partners as $key => $value): ?>
+							<div class="item col-sm-4 col-xs-6">
+								<img src="<?php echo base_url("assets/upload/partners/" .$value['image']); ?>">
+							</div>
+                        <?php endforeach ?>
+                    <?php endif ?>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
-
-<!-- InstanceEndEditable -->
+<footer class="footer container-fluid">
+	<section class="container">
+		<div class="row">
+			<div class="col-sm-9 col-sm-offset-3 col-xs-12">
+				<ul class="list-inline">
+					<li>
+						<a href="<?php echo base_url('porfolio/') ?>">Work</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url('about/') ?>">About Us</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url('team/') ?>">Team</a>
+					</li>
+					<li>
+						<a href="<?php echo base_url('contact/') ?>">Contact</a>
+					</li>
+				</ul>
+				<h5>MATO CREATIVE 2018</h5>
+			</div>
+		</div>
+	</section>
+	<section class="bottom container-fluid" style="background-image: url('https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=79cbb47c2fa1dab8479b31a61567638a&auto=format&fit=crop&w=1867&q=80')">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-offset-3 col-xs-12">
+					<p>Wanna Start a Project</p>
+					<h1>
+						<a href="<?php echo base_url('contact/') ?>">
+							<b>Starting</b> Right now
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
