@@ -2,7 +2,7 @@
 ===============================
 ===============================
 
-CSS for Homepage
+CSS for Contact
 Author: hung.luong@matocreative.vn
 
 ===============================
@@ -251,87 +251,84 @@ footer {
 
   footer .bottom {
     padding-top: 150px; } }
-.homepage #fullpage .section {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: relative; }
-  .homepage #fullpage .section img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 900; }
-  .homepage #fullpage .section .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 901;
-    background-color: rgba(0, 0, 0, 0.5); }
-  .homepage #fullpage .section .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 902;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-    .homepage #fullpage .section .container .content {
-      padding-top: 40vh; }
-      .homepage #fullpage .section .container .content a {
-        color: #fff; }
-      .homepage #fullpage .section .container .content .head {
-        font-size: 0.875em;
-        color: #fff;
-        margin-bottom: 55px; }
-      .homepage #fullpage .section .container .content .body {
-        font-size: 4.375em;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        line-height: 1.2;
-        max-height: 4em;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical; }
-      .homepage #fullpage .section .container .content .foot {
-        font-size: 0.875em;
-        margin-top: 55px; }
-        .homepage #fullpage .section .container .content .foot a {
-          color: #999;
-          text-decoration: underline;
-          text-transform: uppercase; }
-          .homepage #fullpage .section .container .content .foot a:hover {
-            color: #fff; }
-  .homepage #fullpage .section .quotation-request {
-    position: absolute;
-    top: 300px;
-    left: 10px;
-    z-index: 901;
-    -webkit-transform: rotateZ(-90deg);
-    -moz-transform: rotateZ(-90deg);
-    -ms-transform: rotateZ(-90deg);
-    -o-transform: rotateZ(-90deg);
-    transform: rotateZ(-90deg); }
-    .homepage #fullpage .section .quotation-request a {
-      color: #fff; }
+.contact {
+  margin-top: 20vh;
+  overflow-x: hidden; }
+  .contact .contact-body .row .intro p {
+    font-size: 2.26em;
+    color: 333; }
+  .contact .contact-body .row .info {
+    position: relative; }
+    .contact .contact-body .row .info p {
+      color: #999; }
+      .contact .contact-body .row .info p a {
+        color: #999; }
+        .contact .contact-body .row .info p a:hover {
+          color: #333; }
+    .contact .contact-body .row .info .time {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      .contact .contact-body .row .info .time h1 {
+        font-size: 15em;
+        color: rgba(0, 0, 0, 0.05); }
+  .contact .contact-body .row .follow {
+    padding-top: 50px; }
+    .contact .contact-body .row .follow h4 {
+      font-size: 0.875em; }
+    .contact .contact-body .row .follow ul li {
+      font-size: 1.5em; }
+  .contact .contact-request {
+    margin-top: 100px;
+    position: relative; }
+    .contact .contact-request .background {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 222, 0, 0.1);
+      position: absolute;
+      top: 0;
+      left: 0%; }
+    .contact .contact-request > .row {
+      padding-top: 70px;
+      padding-bottom: 70px; }
+      .contact .contact-request > .row .body .form-horizontal .row .form-control {
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #999;
+        box-shadow: none;
+        margin-bottom: 30px; }
+      .contact .contact-request > .row .body .form-horizontal .row textarea {
+        resize: none; }
+      .contact .contact-request > .row .body .form-horizontal .row .btn-default {
+        background-color: transparent;
+        border: none;
+        text-transform: uppercase;
+        padding-left: 0;
+        color: #999; }
+        .contact .contact-request > .row .body .form-horizontal .row .btn-default:hover {
+          color: #333; }
+      .contact .contact-request > .row #requestForm .form-horizontal .row .form-control {
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #999;
+        box-shadow: none;
+        margin-bottom: 30px; }
+      .contact .contact-request > .row #requestForm .form-horizontal .row textarea {
+        resize: none; }
+      .contact .contact-request > .row #requestForm .form-horizontal .row .btn-default {
+        background-color: transparent;
+        border: none;
+        text-transform: uppercase;
+        padding-left: 0;
+        color: #999; }
+        .contact .contact-request > .row #requestForm .form-horizontal .row .btn-default:hover {
+          color: #333; }
 
-@media (max-width: 768px) {
-  .homepage #fullpage .section .container {
-    width: 80%;
-    margin-left: 5%; }
-    .homepage #fullpage .section .container .content {
-      padding-top: 20vh; }
-      .homepage #fullpage .section .container .content .head {
-        font-size: 0.875em;
-        color: #fff;
-        margin-bottom: 50px; }
-      .homepage #fullpage .section .container .content .foot {
-        margin-top: 50px; }
-  .homepage #fullpage .section .quotation-request {
-    top: 300px;
-    left: -30px; } }
-
-/*# sourceMappingURL=homepage.css.map */
+/*# sourceMappingURL=contact.css.map */

@@ -16,6 +16,13 @@
                         echo form_input('project_title', set_value('project_title'), 'class="form-control"');
                         ?>
                     </div>
+					<div class="form-group">
+                        <?php
+                        echo form_label('Main Color', 'project_color');
+                        echo form_error('project_color');
+                        echo form_input('project_color', set_value('project_color'), 'class="form-control"');
+                        ?>
+					</div>
                     <div class="form-group">
                         <?php
                         echo form_label('Customer', 'project_customer');
@@ -23,6 +30,13 @@
                         echo form_input('project_customer', set_value('project_customer'), 'class="form-control"');
                         ?>
                     </div>
+					<div class="form-group">
+                        <?php
+                        echo form_label('Year', 'project_year');
+                        echo form_error('project_year');
+                        echo form_input('project_year', set_value('project_year'), 'class="form-control"');
+                        ?>
+					</div>
                     <div class="form-group">
                         <?php
                         echo form_label('Location', 'project_location');

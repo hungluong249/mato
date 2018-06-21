@@ -27,6 +27,8 @@ $gray-light : #999;
 body, html{
     width: 100%;
     height: 100%;
+
+    overflow-x: hidden;
 }
 
 a{
@@ -55,7 +57,7 @@ a{
 
 body{
     font-family: 'webFont-semi';
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 span{
@@ -66,6 +68,22 @@ span{
     &.bold{
         font-family: 'webFont-bold' !important;
     }
+}
+
+/*
+===============================
+
+MIXIN
+
+===============================
+ */
+
+@mixin transition(){
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
 }
 
 /*
@@ -114,13 +132,23 @@ header{
     .side-text{
         position: absolute;
         top: 270px;
-        right: 70px;
+        left: 100%;
+
+        padding-top: 70px;
+
+        width: 30vh;
 
         -webkit-transform: rotateZ(90deg);
         -moz-transform: rotateZ(90deg);
         -ms-transform: rotateZ(90deg);
         -o-transform: rotateZ(90deg);
         transform: rotateZ(90deg);
+
+        -webkit-transform-origin: top left;
+        -moz-transform-origin: top left;
+        -ms-transform-origin: top left;
+        -o-transform-origin: top left;
+        transform-origin: top left;
 
         color: #fff;
 
@@ -223,8 +251,151 @@ section.nav{
 section.main-content{
     width: 100%;
     min-height: 100%;
+
+    section{
+
+        .heading{
+            margin-bottom: 150px;
+
+            h4.sub-title{
+                font-size: 0.875em;
+            }
+
+            h1.title{
+                font-size: 4.375em;
+                font-family: webFont-light !important;
+
+                b{
+                    font-family: webFont-bold !important;
+                }
+            }
+
+            a{
+                font-size: 0.875em;
+                color: #999;
+                text-decoration: underline;
+
+                &:hover{
+                    color: #333;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .mask{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 footer{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 
+    .bottom{
+        width: 100%;
+        height: 60vh;
+
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding-top: 235px;
+
+        position: relative;
+
+        .overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .container{
+            .row{
+                p{
+                    color: #fff;
+                }
+
+                h1{
+                    a{
+                        color: #fff;
+                        font-family: webFont-light;
+
+                        b{
+                            font-family: webFont-bold;
+                        }
+
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        .logo{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .nav-btn{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .side-text{
+            position: absolute;
+            top: 270px;
+            left: 100%;
+
+            padding-top: 20px;
+
+            width: 30vh;
+
+            -webkit-transform: rotateZ(90deg);
+            -moz-transform: rotateZ(90deg);
+            -ms-transform: rotateZ(90deg);
+            -o-transform: rotateZ(90deg);
+            transform: rotateZ(90deg);
+
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            transform-origin: top left;
+
+            color: #fff;
+
+            font-size: 1.5em;
+        }
+
+        .container{
+            .nav-title{
+                margin-top: 54px;
+                text-transform: uppercase;
+                color: #fff;
+            }
+        }
+    }
+
+    footer{
+        .bottom{
+            padding-top: 150px;
+        }
+    }
 }
