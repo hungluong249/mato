@@ -1,0 +1,65 @@
+/*
+===============================
+===============================
+
+CSS for nopage
+Author: hung.luong@matocreative.vn
+
+===============================
+===============================
+ */
+
+
+
+@import "main";
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+
+}
+
+.main-content{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("https://images.unsplash.com/photo-1477554193778-9562c28588c0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=34ca21554807754d0ce721042c58f895&auto=format&fit=crop&w=1950&q=80");
+    background-size: cover;
+    background-position: center center;
+
+    position: relative;
+
+    .overlay{
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0,0,0,0.2);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .container{
+        .heading{
+            margin-top: 40vh;
+            color: #fff;
+
+            h4.sub-title{
+                font-size: 0.875em;
+            }
+
+            h1.title{
+                font-size: 4.375em;
+                font-family: webFont-light !important;
+
+                b{
+                    font-family: webFont-bold !important;
+                }
+            }
+        }
+    }
+}
