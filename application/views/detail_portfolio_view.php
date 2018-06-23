@@ -62,7 +62,7 @@ switch ($detail['project_secondary_filter']) {
 				<h1><?php echo $detail['project_title'] ?></h1>
 			</div>
 			<div class="item col-sm-6 col-xs-12">
-				<p><?php echo $detail['project_customer'] ?></p>
+				<p><?php echo $detail['project_description'] ?></p>
 			</div>
 		</div>
 	</div>
@@ -75,9 +75,11 @@ switch ($detail['project_secondary_filter']) {
 
 	<div class="work-detail-head container">
 		<div class="row">
+			<!--
 			<div class="work-detail-description col-sm-8 col-sm-offset-3 col-xs-12">
 				<p><?php echo $detail['project_description'] ?></p>
 			</div>
+			-->
 			<div class="work-detail-info col-sm-8 col-sm-offset-3 col-xs-12">
 				<div class="row">
 					<div class="col-sm-4 col-xs-12">
