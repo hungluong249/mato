@@ -78,4 +78,44 @@ class Contact extends MY_Controller {
         }
     }
 
+    public function register_project(){
+        $this->load->model('register_project_model');
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('request_name', 'Name', 'trim|required');
+        $this->form_validation->set_rules('request_position', 'Position', 'trim|required');
+        $this->form_validation->set_rules('request_company', 'Company', 'trim|required');
+        $this->form_validation->set_rules('request_email', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('request_phone', 'Phone', 'trim|required|numeric');
+        $this->form_validation->set_rules('request_service', 'Service', 'trim|required');
+        $this->form_validation->set_rules('request_budget', 'Budget', 'required');
+        $this->form_validation->set_rules('request_timeline', 'Timeline', 'required');
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->data['check'] = true;
+            $this->render('contact_view');
+        } else {
+            if($this->input->post()){
+                $data = array(
+                    'name' => $this->input->post('request_name'),
+                    'position' => $this->input->post('request_position'),
+                    'company' => $this->input->post('request_company'),
+                    'email' => $this->input->post('request_email'),
+                    'phone' => $this->input->post('request_phone'),
+                    'service' => $this->input->post('request_service'),
+                    'price' => $this->input->post('request_budget'),
+                    'time' => $this->input->post('request_timeline'),
+                    'plan' => $this->input->post('request_plan'),
+                    'created' => date("Y-m-d H:i:s")
+                );
+                $insert = $this->register_project_model->insert($data);
+                if($insert){
+                    $this->session->set_flashdata('message', 'Register project successfully');
+                    redirect('contact','refresh');
+                }
+            }
+        }
+    }
+
 }

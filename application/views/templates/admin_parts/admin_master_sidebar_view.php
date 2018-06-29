@@ -63,6 +63,26 @@ if ($this->ion_auth->logged_in()) {
                             </li>
                         </ul>
                     </li>
+                    <li class="treeview">
+                        <a href="javascript:;" class="">
+                            <i class="icon_documents_alt"></i>
+                            <span>Register Projects</span>
+                            <span class="pull-right-container">
+                              <i class="fa fa-angle-left pull-right"></i>
+                          </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li>
+                                <a class="" href="<?php echo site_url('admin/register_project/index'); ?>">List Pending</a>
+                            </li>
+                            <li>
+                                <a class="" href="<?php echo site_url('admin/register_project/success'); ?>">List Success</a>
+                            </li>
+                            <li>
+                                <a class="" href="<?php echo site_url('admin/register_project/cancel'); ?>">List Cancel</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
                         <a class="" href="<?php echo site_url('admin/partners'); ?>">
                             <i class="icon_genius"></i>
