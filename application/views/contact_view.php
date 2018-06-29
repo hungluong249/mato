@@ -4,7 +4,6 @@
 <!--Contact JS -->
 <script src="<?php echo site_url('assets/js/contact.min.js'); ?>"></script>
 
-
 <section class="contact container-fluid">
 	<div class="contact-head container">
 		<div class="row">
@@ -77,30 +76,34 @@
 					<div class="row">
 						<div class="col-md-6 col-sm-6 col-xs-12">
                             <?php
-                            echo form_error('contact_name');
+                            
                             echo form_input('contact_name', set_value('contact_name'), 'class="form-control" id="InputName" placeholder="Name"');
+                            echo form_error('contact_name', '<span class="error">', '</span>');
                             ?>
 						</div>
 						<div class="col-md-6 col-sm-6 col-xs-12">
                             <?php
-                            echo form_error('contact_phone');
+                            
                             echo form_input('contact_phone', set_value('contact_phone'), 'class="form-control" id="InputPhone" placeholder="Phone"');
+                            echo form_error('contact_phone', '<span class="error">', '</span>');
                             ?>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12">
                             <?php
-                            echo form_error('contact_email');
+                            
                             echo form_input('contact_email', set_value('contact_email'), 'class="form-control" id="InputMail" placeholder="Email"');
+                            echo form_error('contact_email', '<span class="error">', '</span>');
                             ?>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12">
                             <?php
-                            echo form_error('contact_content');
+                            
                             echo form_textarea('contact_content', set_value('contact_content', ''), 'class="form-control" rows="5" placeholder="Message..."');
+                            echo form_error('contact_content', '<span class="error">', '</span>');
                             ?>
 						</div>
 					</div>
@@ -120,45 +123,54 @@
 						Start <b>Right now</b>
 					</h1>
 					<a data-toggle="collapse" href="#requestForm" aria-expanded="false" aria-controls="requestForm">Request Form</a>
-
-					<div class="collapse" id="requestForm">
+                    <?php if (isset($check)): ?>
+                        <div class="collapse in" id="requestForm">
+                    <?php else: ?>
+                        <div class="collapse" id="requestForm">
+                    <?php endif ?>
+                    
                         <?php
-                        echo form_open_multipart(base_url('contact/send_mail'), array('class' => 'form-horizontal'));
+                        echo form_open_multipart(base_url('contact/register_project'), array('class' => 'form-horizontal'));
                         ?>
 						<h3>How can we contact you?</h3>
 						<div class="row">
 							<div class="col-sm-6 col-xs-12">
                                 <?php
-                                echo form_error('request_name');
+                                
                                 echo form_input('request_name', set_value('request_name'), 'class="form-control" id="request_name" placeholder="Name"');
+                                echo form_error('request_name', '<span class="error">', '</span>');
                                 ?>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-6 col-xs-12">
                                 <?php
-                                echo form_error('request_position');
+                                
                                 echo form_input('request_position', set_value('request_position'), 'class="form-control" id="request_position" placeholder="Position"');
+                                echo form_error('request_position', '<span class="error">', '</span>');
                                 ?>
 							</div>
 							<div class="col-sm-6 col-xs-12">
                                 <?php
-                                echo form_error('request_company');
+                                
                                 echo form_input('request_company', set_value('request_company'), 'class="form-control" id="request_company" placeholder="Company"');
+                                echo form_error('request_company', '<span class="error">', '</span>');
                                 ?>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-6 col-xs-12">
                                 <?php
-                                echo form_error('request_email');
+                                
                                 echo form_input('request_email', set_value('request_email'), 'class="form-control" id="request_email" placeholder="Email"');
+                                echo form_error('request_email', '<span class="error">', '</span>');
                                 ?>
 							</div>
 							<div class="col-sm-6 col-xs-12">
                                 <?php
-                                echo form_error('request_phone');
+                                
                                 echo form_input('request_phone', set_value('request_phone'), 'class="form-control" id="request_phone" placeholder="Phone Number"');
+                                echo form_error('request_phone', '<span class="error">', '</span>');
                                 ?>
 							</div>
 						</div>
@@ -169,9 +181,11 @@
 								<div class="checkbox">
 									<label>
                                         <?php
-                                        echo form_error('request_service');
+                                        
                                         echo form_checkbox('request_service', 'Branding', FALSE);
                                         echo 'Branding';
+                                        echo '<br />';
+                                        echo form_error('request_service', '<span class="error">', '</span>');
                                         ?>
 									</label>
 								</div>
@@ -180,9 +194,11 @@
 								<div class="checkbox">
 									<label>
                                         <?php
-                                        echo form_error('request_service');
+                                        
                                         echo form_checkbox('request_service', 'Website Design', FALSE);
                                         echo 'Website Design';
+                                        echo '<br />';
+                                        echo form_error('request_service', '<span class="error">', '</span>');
                                         ?>
 									</label>
 								</div>
@@ -191,9 +207,11 @@
 								<div class="checkbox">
 									<label>
                                         <?php
-                                        echo form_error('request_service');
+                                        
                                         echo form_checkbox('request_service', 'Photography', FALSE);
                                         echo 'Photography';
+                                        echo '<br />';
+                                        echo form_error('request_service', '<span class="error">', '</span>');
                                         ?>
 									</label>
 								</div>
@@ -204,14 +222,16 @@
 						<div class="row">
 							<div class="col-sm-6 col-xs-12">
                                 <?php
-                                echo form_error('request_budget');
-                                echo form_dropdown('request_budget', $option = array('0' => 'Select One','1' => 'Under 10M', '2' => '10M - 30M', '3' => 'Above 30M'), 0, 'class="form-control"')
+                                
+                                echo form_dropdown('request_budget', $option = array('' => 'Select One','0' => 'Under 500$', '1' => '500$ - 1500$', '2' => 'Above 1500$'), '', 'class="form-control"');
+                                echo form_error('request_budget', '<span class="error">', '</span>');
                                 ?>
 							</div>
 							<div class="col-sm-6 col-xs-12">
                                 <?php
-                                echo form_error('request_timeline');
-                                echo form_dropdown('request_timeline', $option = array('0' => 'Select One','1' => 'Under 1 month', '2' => '1 month - 3 month', '3' => 'Above 3 month'), 0, 'class="form-control"')
+                                
+                                echo form_dropdown('request_timeline', $option = array('' => 'Select One','0' => 'Under 1 month', '1' => '1 month - 3 month', '2' => 'Above 3 month'), '', 'class="form-control"');
+                                echo form_error('request_timeline', '<span class="error">', '</span>');
                                 ?>
 							</div>
 						</div>
