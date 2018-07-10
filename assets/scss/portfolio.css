@@ -43,7 +43,7 @@ a {
   src: url("../fonts/SanFranciscoText-Bold.otf"); }
 @font-face {
   font-family: webFont-semi;
-  src: url("../fonts/SanFranciscoText-SemiBold.otf"); }
+  src: url("../fonts/SanFranciscoText-Semibold.otf"); }
 body {
   font-family: 'webFont-semi';
   letter-spacing: 1px; }
