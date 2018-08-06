@@ -1,0 +1,61 @@
+/*
+MAIN FOOTER FOR SITE
+
+AUTHOR: hung.luong@matocreative.vn
+
+
+/*
+========== FOOTER ==========
+ */
+
+footer{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    .bottom{
+        width: 100%;
+        height: 60vh;
+
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding-top: 235px;
+
+        position: relative;
+
+        .overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .container{
+            .row{
+                p{
+                    color: #fff;
+                }
+
+                h1{
+                    a{
+                        color: #fff;
+                        font-family: 'webFont-light', Helvetica, Serif;
+
+                        b{
+                            font-family: 'webFont-bold', Helvetica, Serif;
+                        }
+
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

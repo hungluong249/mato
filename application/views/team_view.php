@@ -1,6 +1,3 @@
-<!-- Work Style-->
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/scss/team.min.css'); ?>">
-
 <!--Portfolio JS -->
 <script src="<?php echo site_url('assets/js/team.min.js'); ?>"></script>
 

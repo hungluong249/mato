@@ -1,0 +1,50 @@
+/*
+MAIN FONT SETTINGS FOR SITE
+
+AUTHOR: hung.luong@matocreative.vn
+
+
+/*
+========== FONT SETTINGS ==========
+ */
+
+/*
+@font-face{
+    font-family: 'webFont-light';
+    src: url("../fonts/SF-Pro-Display-Light.otf") format('otf');
+}
+
+@font-face{
+    font-family: 'webFont-bold';
+    src: url("../fonts/SF-Pro-Display-Bold.otf") format('otf');
+}
+
+@font-face{
+    font-family: 'webFont-semi';
+    src: url("../fonts/SF-Pro-Display-SemiBold.otf") format('otf');
+}
+
+*/
+/*
+Embed Google Fonts
+ */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,700');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+span{
+    &.light{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+
+    &.bold{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+}
+

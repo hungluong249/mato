@@ -2,20 +2,12 @@
 ===============================
 ===============================
 
-CSS for Homepage
+CSS for Portfolio
 Author: hung.luong@matocreative.vn
 
 ===============================
 ===============================
  */
-
-
-
-@import "main";
-
-header{
-
-}
 
 .work{
     .cover{
@@ -50,12 +42,12 @@ header{
             color: #fff;
 
             .head{
-                font-family: webFont-semi;
+                font-family: 'webFont-semi', Helvetica, Serif;
                 font-size: 0.875em;
             }
 
             .body{
-                font-family: webFont-semi;
+                font-family: 'webFont-semi', Helvetica, Serif;
                 font-size: 4.375em;
             }
 
@@ -296,16 +288,19 @@ header{
             padding-top: 100px;
 
             p{
-                font-family: 'webFont-semi';
+                font-family: 'webFont-semi', Helvetica, Serif;
                 font-size: 2.26em;
                 color: 999;
             }
         }
 
         .work-detail-info{
+
             .row{
+                padding-top: 50px;
+
                 h4{
-                    font-family: "webFont-bold";
+                    font-family: 'webFont-bold', Helvetica, Serif;
                     font-size: 0.875em;
                     color: #333;
                 }
@@ -332,12 +327,16 @@ header{
 footer{
     .container{
         .row{
+            &:first-of-type{
+                margin-top: 50px;
+            }
+
             &:nth-of-type(2){
                 margin-top: 100px;
                 padding-bottom: 50px;
 
                 b{
-                    font-family: webFont-bold;
+                    font-family: 'webFont-bold', Helvetica, Serif;
                 }
             }
         }
@@ -420,57 +419,57 @@ footer{
     }
 }
 
-@media (max-width: 768px){
-    .work{
-        .cover{
+@media (max-width: 768px) {
+    .work {
+        .cover {
 
-            .intro{
+            .intro {
                 left: 10%;
             }
         }
 
-        .work-head{
-            .container{
-                .row{
-                    .work-intro{
-                        p{
+        .work-head {
+            .container {
+                .row {
+                    .work-intro {
+                        p {
                             font-size: 1.5em;
                         }
                     }
 
-                    .work-control{
+                    .work-control {
                         margin-top: 30px;
                     }
                 }
             }
 
-            .container-fluid{
-                .work-content{
-                    .grid-item{
+            .container-fluid {
+                .work-content {
+                    .grid-item {
                         margin-bottom: 60px;
 
-                        &:nth-of-type(odd){
-                            .mask{
+                        &:nth-of-type(odd) {
+                            .mask {
                                 height: 250px;
                             }
                         }
 
-                        &:nth-of-type(even){
-                            .mask{
+                        &:nth-of-type(even) {
+                            .mask {
                                 height: 150px;
                             }
                         }
 
-                        .mask{
+                        .mask {
                             width: 90%;
 
                             margin-left: 5%;
                         }
 
-                        span{
+                        span {
                             position: absolute;
 
-                            &.brand{
+                            &.brand {
                                 top: 0;
                                 right: 100%;
                             }
@@ -481,25 +480,26 @@ footer{
         }
     }
 
-    .work-detail{
+    .work-detail {
         padding-top: 20vh;
 
-        .work-detail-head{
+        .work-detail-head {
             padding-left: 15px;
             padding-right: 15px;
         }
 
-        .work-detail-cover{
+        .work-detail-cover {
             margin-top: 50px;
 
             height: 50vh;
         }
 
-        .work-detail-head{
+        .work-detail-head {
             margin-top: 100px;
-    }
+        }
 
-    footer{
+        footer {
 
+        }
     }
 }

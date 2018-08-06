@@ -15,6 +15,9 @@
 <!-- Animate Css -->
 <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/lib/'); ?>animate/animate.min.css">
 
+	<!-- Style Css -->
+	<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/scss/'); ?>style.min.css">
+
 
 <script type="text/javascript" src="<?php echo site_url('assets/lib/'); ?>jquery/jquery.min.js"></script>
 <script src="<?php echo site_url('assets/lib/'); ?>bootstrap/js/bootstrap.min.js"></script>
