@@ -1,6 +1,4 @@
 <!-- CSS -->
-
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/scss/'); ?>homepage.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/lib/'); ?>fullpage/css/jquery.fullpage.min.css">
 
 <!--Homepage JS -->
@@ -68,7 +66,9 @@
         ?>
 
 		<div class="section">
-			<img src="<?php echo site_url('assets/upload/projects/' .$value['project_image_special']) ?>" alt="image project <?php echo $value['project_title'] ?> ">
+			<div class="mask">
+				<img src="<?php echo site_url('assets/upload/projects/' .$value['project_avatar']) ?>" alt="image project <?php echo $value['project_title'] ?> ">
+			</div>
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="content col-md-offset-2 col-sm-offset-2">
@@ -92,7 +92,9 @@
 
 		<!-- Section About -->
 		<div class="section">
-			<img src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fbaf57cfb9374309ad3153a5d27b7c78&auto=format&fit=crop&w=1400&q=80" alt="img About Us">
+			<div class="mask">
+				<img src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fbaf57cfb9374309ad3153a5d27b7c78&auto=format&fit=crop&w=1400&q=80" alt="img About Us">
+			</div>
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="content col-md-offset-2 col-sm-offset-2">

@@ -100,9 +100,7 @@ switch ($detail['project_secondary_filter']) {
 			</div>
 		</div>
 	</div>
-</section>
 
-<section class="container-fluid">
 	<div class="work-detail-body">
 		<article>
             <?php if ($detail['project_description_image'] != null): ?>
@@ -115,6 +113,10 @@ switch ($detail['project_secondary_filter']) {
             <?php endif ?>
 		</article>
 	</div>
+</section>
+
+<section class="container-fluid">
+
 </section>
 
 <footer class="footer container-fluid">

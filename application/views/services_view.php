@@ -1,6 +1,3 @@
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/public/scss/services.min.css'); ?>">
-
-
 <section class="services container">
 	<div class="title">
 		<div class="heading">

@@ -1,6 +1,3 @@
-<!-- Contact Style-->
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/scss/contact.min.css'); ?>">
-
 <!--Contact JS -->
 <script src="<?php echo site_url('assets/js/contact.min.js'); ?>"></script>
 

@@ -1,0 +1,79 @@
+/*
+MAIN HEADER FOR SITE
+
+AUTHOR: hung.luong@matocreative.vn
+
+
+/*
+========== HEADER ==========
+ */
+
+header{
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1002;
+
+    .logo{
+        position: absolute;
+        top: 40px;
+        left: 70px;
+    }
+
+    .nav-btn{
+        position: absolute;
+        top: 40px;
+        right: 70px;
+
+        padding-left: 5px;
+        border: 2px solid #fff;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        span{
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #fff;
+
+            display: block;
+        }
+    }
+
+    .side-text{
+        position: absolute;
+        top: 270px;
+        left: 100%;
+
+        padding-top: 70px;
+
+        width: 30vh;
+
+        -webkit-transform: rotateZ(90deg);
+        -moz-transform: rotateZ(90deg);
+        -ms-transform: rotateZ(90deg);
+        -o-transform: rotateZ(90deg);
+        transform: rotateZ(90deg);
+
+        -webkit-transform-origin: top left;
+        -moz-transform-origin: top left;
+        -ms-transform-origin: top left;
+        -o-transform-origin: top left;
+        transform-origin: top left;
+
+        color: #fff;
+
+        font-size: 1.5em;
+    }
+
+    .container{
+        .nav-title{
+            margin-top: 54px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+}

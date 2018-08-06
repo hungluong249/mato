@@ -10,25 +10,9 @@ Author: hung.luong@matocreative.vn
  */
 
 
-/*
-===============================
-
-VARIABLES
-
-===============================
- */
-
-$primary : rgb(255,222,0);
-
-$gray-dark : #333;
-$gray : #666;
-$gray-light : #999;
-
 body, html{
     width: 100%;
     height: 100%;
-
-    overflow-x: hidden;
 }
 
 a{
@@ -40,51 +24,7 @@ a{
     }
 }
 
-@font-face{
-    font-family: webFont-light;
-    src: url('../fonts/SanFranciscoText-Light.otf');
-}
 
-@font-face{
-    font-family: webFont-bold;
-    src: url('../fonts/SanFranciscoText-Bold.otf');
-}
-
-@font-face{
-    font-family: webFont-semi;
-    src: url('../fonts/SanFranciscoText-SemiBold.otf');
-}
-
-body{
-    font-family: 'webFont-semi';
-    letter-spacing: 1px;
-}
-
-span{
-    &.light{
-        font-family: 'webFont-light' !important;;
-    }
-
-    &.bold{
-        font-family: 'webFont-bold' !important;
-    }
-}
-
-/*
-===============================
-
-MIXIN
-
-===============================
- */
-
-@mixin transition(){
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    -ms-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-}
 
 /*
 ===============================
@@ -94,75 +34,6 @@ CSS
 ===============================
  */
 
-header{
-    width: 100%;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1002;
-
-    .logo{
-        position: absolute;
-        top: 40px;
-        left: 70px;
-    }
-
-    .nav-btn{
-        position: absolute;
-        top: 40px;
-        right: 70px;
-
-        padding-left: 5px;
-        border: 2px solid #fff;
-
-        &:hover{
-            cursor: pointer;
-        }
-
-        span{
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            color: #fff;
-
-            display: block;
-        }
-    }
-
-    .side-text{
-        position: absolute;
-        top: 270px;
-        left: 100%;
-
-        padding-top: 70px;
-
-        width: 30vh;
-
-        -webkit-transform: rotateZ(90deg);
-        -moz-transform: rotateZ(90deg);
-        -ms-transform: rotateZ(90deg);
-        -o-transform: rotateZ(90deg);
-        transform: rotateZ(90deg);
-
-        -webkit-transform-origin: top left;
-        -moz-transform-origin: top left;
-        -ms-transform-origin: top left;
-        -o-transform-origin: top left;
-        transform-origin: top left;
-
-        color: #fff;
-
-        font-size: 1.5em;
-    }
-
-    .container{
-        .nav-title{
-            margin-top: 54px;
-            text-transform: uppercase;
-            color: #fff;
-        }
-    }
-}
 
 section.nav{
     width: 100%;
@@ -244,7 +115,8 @@ section.nav{
         bottom: 40px;
         left: 70px;
 
-        font-family: 'webFont-light';
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
     }
 }
 
@@ -263,10 +135,12 @@ section.main-content{
 
             h1.title{
                 font-size: 4.375em;
-                font-family: webFont-light !important;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
 
                 b{
-                    font-family: webFont-bold !important;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
                 }
             }
 
@@ -292,57 +166,6 @@ section.main-content{
     }
 }
 
-footer{
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-
-    .bottom{
-        width: 100%;
-        height: 60vh;
-
-        background-attachment: fixed;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        padding-top: 235px;
-
-        position: relative;
-
-        .overlay{
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.6);
-
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        .container{
-            .row{
-                p{
-                    color: #fff;
-                }
-
-                h1{
-                    a{
-                        color: #fff;
-                        font-family: webFont-light;
-
-                        b{
-                            font-family: webFont-bold;
-                        }
-
-                        &:hover{
-                            color: #fff;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 @media (max-width: 768px){
     header{

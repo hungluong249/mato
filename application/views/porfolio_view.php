@@ -1,6 +1,3 @@
-<!-- Work Style-->
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/scss/portfolio.min.css'); ?>">
-
 <!-- Animate CSS-->
 <link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/lib/animate/animate.min.css'); ?>">
 

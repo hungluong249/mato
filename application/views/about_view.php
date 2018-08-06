@@ -1,6 +1,3 @@
-<!-- About Style-->
-<link rel="stylesheet" type="text/css" href="<?php echo site_url('assets/scss/about.min.css'); ?>">
-
 <!-- About JS -->
 <script src="<?php echo site_url('assets/js/about.min.js'); ?>"></script>
 
@@ -41,17 +38,15 @@
 							<ul class="list-unstyled">
 								<h1>1/</h1>
 
-								<li>Tư vấn thương hiệu</li>
-								<li>Tính cách thương hiệu</li>
-								<li>Đặt tên và slogan</li>
+								<li>Brand consulting</li>
+								<li>Brand visual strategy</li>
+								<li>Naming & Slogan</li>
 								<li>Logotype</li>
-								<li>Ứng dụng thương hiệu</li>
-								<li>Hệ thống nhận diện trực quan</li>
-								<li>Nhận diện thương hiệu</li>
-								<li>Môi trường thương hiệu</li>
-								<li>Kiến trúc thương hiệu</li>
-								<li>Hình ảnh thương hiệu</li>
-								<li>Nội dung thương hiệu</li>
+								<li>Brand applications</li>
+								<li>Visual identity</li>
+								<li>Corporate brand identity</li>
+								<li>Brand environmental</li>
+								<li>Brand Content</li>
 							</ul>
 						</div>
 						<div class="item col-sm-4 col-xs-12 wow fadeInRight">
@@ -59,10 +54,10 @@
 							<ul class="list-unstyled">
 								<h1>2/</h1>
 
-								<li>Thiết kế Website</li>
-								<li>Phát triển Website</li>
+								<li>Website Design</li>
+								<li>Website Develop</li>
 								<li>Landing page</li>
-								<li>Thiết kế giao diện người dùng</li>
+								<li>UX Design</li>
 							</ul>
 						</div>
 						<div class="item col-sm-4 col-xs-12 wow fadeInRight">
@@ -72,7 +67,6 @@
 
 								<li>Photography</li>
 								<li>Digital imaging/ Retouch</li>
-								<li>Xử lý hình ảnh</li>
 								<li>Lookbook</li>
 							</ul>
 						</div>
@@ -83,9 +77,7 @@
 							<ul class="list-unstyled">
 								<h1>4/</h1>
 
-								<li>Thiết kế bao bì sản phẩm</li>
-								<li>Thiết kế nhãn hàng</li>
-								<li>Naming & Slogan</li>
+								<li>Packaging Design</li>
 							</ul>
 						</div>
 						<div class="item col-sm-4 col-xs-12 wow fadeInRight">
@@ -93,9 +85,8 @@
 							<ul class="list-unstyled">
 								<h1>5/</h1>
 
-								<li>Thiết kế thư điện tử quảng cáo</li>
-								<li>Banner quảng cáo</li>
-								<li>Quảng cáo in ấn</li>
+								<li>Banner Design</li>
+								<li>Print Design</li>
 								<li>Brochure/ Catalouge</li>
 								<li>Salekit</li>
 							</ul>
@@ -105,9 +96,9 @@
 							<ul class="list-unstyled">
 								<h1>6/</h1>
 
-								<li>Tư vấn in ấn</li>
-								<li>In offset</li>
-								<li>Báo cáo thường niên</li>
+								<li>Printing Consulting</li>
+								<li>Offset Printing</li>
+								<li>Annual Reports</li>
 							</ul>
 						</div>
 					</div>
